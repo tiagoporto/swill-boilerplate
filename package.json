@@ -1,8 +1,8 @@
 {
   "name": "swill-boilerplate",
   "version": "0.1.0",
-  "description": "The front-end Boilerplate that you need to start multi-device development, easy to customize.",
-  "homepage": "https://github.com/tiagoporto/generator-swill-boilerplate",
+  "description": "🍺 The front-end Boilerplate that you need to start multi-device development, easy to customize.",
+  "homepage": "http://swillboilerplate.rocks",
   "keywords": [
     "template",
     "gulp",
@@ -18,7 +18,7 @@
   ],
   "author": {
     "name": "Tiago Porto",
-    "url": "http://www.tiagoporto.com/"
+    "url": "http://www.tiagoporto.com"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,16 @@
   },
   "scripts": {},
   "files": [],
+  "dependencies": {
+    "jeet": "6.1.2",
+    "jquery": "3.1.1",
+    "jquery-logo-downloadtip": "2.0.0",
+    "normalize.css": "4.2.0",
+    "outdated-browser": "1.0.2 "
+  },
   "devDependencies": {
-    "babel-preset-es2015": "6.3.13",
-    "browser-sync": "2.15.0",
+    "babel-preset-es2015": "6.16.0",
+    "browser-sync": "2.17.0",
     "del": "2.2.2",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.1",
@@ -41,11 +48,11 @@
     "gulp-eslint": "3.0.1",
     "gulp-file": "0.3.0",
     "gulp-gh-pages": "0.5.4",
-    "gulp-hb": "5.1.0",
-    "gulp-htmlmin": "2.0.0",
+    "gulp-hb": "5.1.4",
+    "gulp-htmlmin": "3.0.0",
     "gulp-if": "2.0.1",
-    "gulp-imagemin": "3.0.1",
-    "gulp-inline": "0.1.1",
+    "gulp-imagemin": "3.0.3",
+    "gulp-inline": "0.1.2",
     "gulp-load-plugins": "1.3.0",
     "gulp-newer": "1.2.0",
     "gulp-notify": "2.2.0",
@@ -53,14 +60,13 @@
     "gulp-remember": "0.3.1",
     "gulp-rename": "1.2.2",
     "gulp-replace": "0.5.4",
-    "gulp-stylus": "2.5.0",
     "gulp-svg-sprite": "1.3.6",
     "gulp-svg2png": "1.0.2",
-    "gulp-uglify": "1.5.4",
+    "gulp-uglify": "2.0.0",
     "gulp-useref": "3.1.2",
     "gulp-wrapper": "1.0.0",
     "gulp.spritesmith": "6.2.1",
-    "jasmine-core": "2.5.1",
+    "jasmine-core": "2.5.2",
     "karma": "1.3.0",
     "karma-chrome-launcher": "2.0.0",
     "karma-coverage": "1.1.1",
@@ -69,7 +75,8 @@
     "rf": "0.0.1",
     "run-sequence": "1.2.2",
     "vinyl-buffer": "1.0.0",
-    "yargs": "5.0.0"
+    "yargs": "6.0.0",
+    "gulp-stylus": "2.5.0"
   },
-  "license": "MIT"
+  "license": ""
 }

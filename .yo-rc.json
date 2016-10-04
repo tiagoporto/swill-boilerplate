@@ -1,26 +1,27 @@
 {
   "generator-swill-boilerplate": {
     "projectName": "Swill Boilerplate",
-    "projectDescription": "The front-end Boilerplate that you need to start multi-device development, easy to customize.",
-    "projectHomepage": "https://github.com/tiagoporto/generator-swill-boilerplate",
+    "projectDescription": "🍺 The front-end Boilerplate that you need to start multi-device development, easy to customize.",
+    "projectHomepage": "http://swillboilerplate.rocks",
     "authorName": "Tiago Porto",
     "authorEmail": "",
-    "authorHomepage": "http://www.tiagoporto.com/",
+    "authorHomepage": "http://www.tiagoporto.com",
     "githubUser": "tiagoporto",
     "settingFolder": false,
     "preprocessor": "stylus",
     "options": [
-      "es6",
       "lintJS"
     ],
     "features": [
       "jquery",
-      "normalize"
+      "normalize",
+      "outdatedBrowser"
     ],
     "jqueryLogoDownloadtip": true,
     "files": [
       "readme",
       "contributing",
+      "404",
       "humans"
     ]
   }

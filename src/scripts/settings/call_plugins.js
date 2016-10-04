@@ -14,5 +14,12 @@ function addLoadEvent(func) {
 addLoadEvent(
     // call plugins after DOM ready
 
+    outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#fff',
+        lowerThan: 'transform',
+        languagePath: 'lang/outdated_browser/{-}.html'
+    }),
+
     $('#logo').downloadTip({ 'position': 'right' })
 );

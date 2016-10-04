@@ -3,7 +3,6 @@
     "src": "src/",
     "dest": "app/",
     "build": "build/",
-    "bower": "app/bower_components",
 
     "handlebars": {
        "src": "handlebars/",
@@ -38,8 +37,6 @@
 
   "components": true,
 
-  "es6": true,
-
   "jQuery": true,
 
   "lintCSS": false,
@@ -66,7 +63,11 @@
     "notify": false,
     "logPrefix": "BrowserSync",
     "server": {
-      "baseDir": ["app/"]
+      "baseDir": ["app/", "./"]
+    },
+    "routes": {
+        "/bower_components": "bower_components",
+        "/node_modules": "node_modules"
     }
   },
 
