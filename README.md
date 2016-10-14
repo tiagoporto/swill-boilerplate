@@ -52,7 +52,7 @@ This boilerplate uses the following technologies:
 
 ## Features
 
-* Clean the assets (build, images, css, js) in the project to maintain the directory organized
+* Clean the assets (build, images, css, js) in the project to keep the directory organized
 * Compress Images
 * Generate Sprites with .png
 * Generate Sprites with .svg and a .png to fallback
@@ -60,12 +60,12 @@ This boilerplate uses the following technologies:
 * HTML templates with handlebars
 * Analyze CSS with csslint
 * Prefix CSS with Autoprefixer
-* Compile Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)
+* Compile Sass or Stylus (Catch Stylus and Sass errors and show them directly on the page)
 * Concatenate And Minify Scripts
 * Analyze JavaScript with ESLint
 * Transpile ES6 to ES5
-* Notify when tasks are complete
-* Monitors changes in the files and reload browser with BrowserSync
+* Notify when tasks have been completed
+* Monitor changes in the files and reload browser with BrowserSync
 * Javascript tests with Jasmine and Karma
 * Build the project compressing HTML, CSS and JS.
 * Push the `build` folder to gh-pages branch
@@ -113,7 +113,7 @@ This boilerplate uses the following technologies:
 │       │  │
 │       │  └─ // Handlebars templates
 │       │
-│       ├─ images // Original imagens, don't compressed
+│       ├─ images // Original images, not compressed
 │       │  │
 │       │  ├─ sprite // Images to generate the sprite
 │       │  │
@@ -210,13 +210,13 @@ This boilerplate uses the following technologies:
 
 ## Boilerplate
 
-* JavaScript files in `src/scripts` named with `*_IGNORE.js` will be ignored and won't be published, named with `*_SEPARATE.js` won't be concatenated and will be generated separated.
+* JavaScript files in `src/scripts` that have `*_IGNORE.js` in their name will be ignored and won't be published, files with `*_SEPARATE.js` in their name won't be concatenated and will be generated separately.
     - Example
     `myplugin_SEPARATE.js` will be published as `myplugin.js`.
 
-* The folder `public/img` is clean when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images direct in the `public/img/copyright`, they won't be deleted.
+* The folder `public/img` is cleaned when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images direct in the `public/img/copyright`, these won't be deleted.
 
-    > If for some other reason you want to use other folders directly in the `public/img`, add the folder in the task ` clean` on `gulpfile.js`, and it won't be deleted.
+    > If for some other reason you want to use other folders directly in the `public/img`, add the folder to the task ` clean` in `gulpfile.js`, and it won't be deleted.
 
 
 ### Usage
@@ -321,11 +321,11 @@ This boilerplate uses the following technologies:
 
     Type: `Object`
 
-    BrowserSync options to builded project, see the browsersync [docs](https://www.browsersync.io/docs/options/).
+    BrowserSync options to build the project, see the browsersync [docs](https://www.browsersync.io/docs/options/).
 
 
 
-1. Open the files `.csslintrc`, `.editorconfig`, and `.eslintrc` and set your configs to CSSLint, EditorConfig and ESLint respectively.
+1. Open the files `.csslintrc`, `.editorconfig`, and `.eslintrc` and set your config for CSSLint, EditorConfig and ESLint respectively.
 
 1. Make a search in the folder project by `{Title}` and `{-}`, and replace by the corrected informations.
 
