@@ -19,7 +19,7 @@
     * [Usage](#usage)
     * [Tasks](#tasks)
     * [Bitmap Sprite](#bitmap-sprite)
-    * [Vetor Sprite](#vetor-sprite)
+    * [Vector Sprite](#vector-sprite)
 * [License](#license)
 
 ## Technologies
@@ -432,7 +432,7 @@ Just use the mixins with the variables as parameters.
 }
 ```
 
-### Vetor Sprite
+### Vector Sprite
 
 To generate SVG sprites is used [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite), as fallback all the SVG sprites are converted to `.png` with [gulp-svg2png](https://github.com/akoenig/gulp-svg2png)
 
