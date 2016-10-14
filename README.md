@@ -210,11 +210,11 @@ This boilerplate uses the following technologies:
 
 ## Boilerplate
 
-* JavaScript files in `src/scripts` named with `*_IGNORE.js` will be ignored and won't be published, named with `*_SEPARATE.js` won't be concatenated and will be generated separated.
+* JavaScript files in `src/scripts` named with `*_IGNORE.js` will be ignored and won't be published, named with `*_SEPARATE.js` won't be concatenated and will be generated separately.
     - Example
     `myplugin_SEPARATE.js` will be published as `myplugin.js`.
 
-* The folder `public/img` is clean when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images direct in the `public/img/copyright`, they won't be deleted.
+* The folder `public/img` is cleaned when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the `public/img/copyright`, they won't be deleted.
 
     > If for some other reason you want to use other folders directly in the `public/img`, add the folder in the task ` clean` on `gulpfile.js`, and it won't be deleted.
 
@@ -286,7 +286,7 @@ This boilerplate uses the following technologies:
 
     Type: `Array`
 
-    Autprefixer option, see the autoprefixer [docs](https://github.com/postcss/autoprefixer#options).
+    Autoprefixer option, see the autoprefixer [docs](https://github.com/postcss/autoprefixer#options).
 
     #### browserSync
 
@@ -294,7 +294,7 @@ This boilerplate uses the following technologies:
 
     BrowserSync options, see the browsersync [docs](https://www.browsersync.io/docs/options/).
 
-    If you will use dinamic files, it's necessary replace the server option by proxy.
+    If you will use dynamic files, it's necessary replace the server option by proxy.
 
     * Example
 
@@ -327,7 +327,7 @@ This boilerplate uses the following technologies:
 
 1. Open the files `.csslintrc`, `.editorconfig`, and `.eslintrc` and set your configs to CSSLint, EditorConfig and ESLint respectively.
 
-1. Make a search in the folder project by `{Title}` and `{-}`, and replace by the corrected informations.
+1. Make a search in the folder project by `{Title}` and `{-}`, and replace by the corrected information.
 
 1. Open the file `src/header-comments.txt` and set your project header.
 
@@ -341,7 +341,7 @@ This boilerplate uses the following technologies:
     $ npm install
     ```
 
-1. Run all the settings and choose the CSS preprocessor that you will use(execute only once).
+1. Run all the settings and choose the CSS preprocessor that you will use (execute only once).
     * Run the task `setup` and pass the parameter the preprocessor.
 
     ```sh
@@ -381,13 +381,13 @@ $ gulp compile
 $ gulp build
 ```
 
-**Build Task** (the build task accepts the parameter --serve) - build the project and serve builded project.
+**Build Task** (the build task accepts the parameter --serve) - build the project and serve built project.
 
 ```sh
 $ gulp build --serve
 ```
 
-**Gh-pages Task** - build the project and push the builded folder to gh-pages branch
+**Gh-pages Task** - build the project and push the built folder to gh-pages branch
 
 ```sh
 $ gulp gh-pages
