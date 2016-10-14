@@ -294,7 +294,7 @@ This boilerplate uses the following technologies:
 
     BrowserSync options, see the browsersync [docs](https://www.browsersync.io/docs/options/).
 
-    If you will use dinamic files, it's necessary replace the server option by proxy.
+    If you will use dynamic files, it's necessary to replace the server option by proxy.
 
     * Example
 
