@@ -52,23 +52,21 @@ This boilerplate uses the following technologies:
 
 ## Features
 
-* Clean the assets (build, images, css, js) in the project to maintain the directory organized
-* Compress Images
-* Generate Sprites with .png
-* Generate Sprites with .svg and a .png to fallback
-* Put SVG inline
-* HTML templates with handlebars
-* Analyze CSS with csslint
-* Prefix CSS with Autoprefixer
-* Compile Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)
-* Concatenate And Minify Scripts
-* Analyze JavaScript with ESLint
-* Transpile ES6 to ES5
-* Notify when tasks are complete
-* Monitors changes in the files and reload browser with BrowserSync
-* Javascript tests with Jasmine and Karma
-* Build the project compressing HTML, CSS and JS.
-* Push the `build` folder to gh-pages branch
+* Cleans the assets (build, images, CSS, JS) in the project to maintain the directory organization
+* Compresses Images
+* Generates Sprites with .png
+* Generates Sprites with .svg and a .png to fallback
+* Analyzes CSS with CSS Lint
+* Prefixes CSS with Autoprefixer
+* Compiles Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)
+* Concatenates And Minifies Scripts
+* Analyzes JavaScript with ESLint
+* Compiles ES2015
+* Notifies when tasks are complete
+* Monitors change in the files and reloads browser with BrowserSync
+* Uses Jasmine & Karma to test JavaScript
+* Builds the project compressing HTML, CSS and JS
+* Pushes the `build` folder to gh-pages branch
 
 ## Folder Structure
 
@@ -113,7 +111,7 @@ This boilerplate uses the following technologies:
 │       │  │
 │       │  └─ // Handlebars templates
 │       │
-│       ├─ images // Original imagens, don't compressed
+│       ├─ images // Original images, don't compressed
 │       │  │
 │       │  ├─ sprite // Images to generate the sprite
 │       │  │
@@ -286,7 +284,7 @@ This boilerplate uses the following technologies:
 
     Type: `Array`
 
-    Autprefixer option, see the autoprefixer [docs](https://github.com/postcss/autoprefixer#options).
+    Autoprefixer option, see the autoprefixer [docs](https://github.com/postcss/autoprefixer#options).
 
     #### browserSync
 
@@ -321,7 +319,7 @@ This boilerplate uses the following technologies:
 
     Type: `Object`
 
-    BrowserSync options to builded project, see the browsersync [docs](https://www.browsersync.io/docs/options/).
+    BrowserSync options for the built project, see the browsersync [docs](https://www.browsersync.io/docs/options/).
 
 
 
