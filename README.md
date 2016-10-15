@@ -212,7 +212,7 @@ This boilerplate uses the following technologies:
     - Example
     `myplugin_SEPARATE.js` will be published as `myplugin.js`.
 
-* The folder `public/img` is clean when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images direct in the `public/img/copyright`, they won't be deleted.
+* The folder `public/img` is clean when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the `public/img/copyright`, they won't be deleted.
 
     > If for some other reason you want to use other folders directly in the `public/img`, add the folder in the task ` clean` on `gulpfile.js`, and it won't be deleted.
 
@@ -292,7 +292,7 @@ This boilerplate uses the following technologies:
 
     BrowserSync options, see the browsersync [docs](https://www.browsersync.io/docs/options/).
 
-    If you will use dynamic files, it's necessary to replace the server option by proxy.
+    If you use dynamic files, it's necessary to replace the server option by proxy.
 
     * Example
 
