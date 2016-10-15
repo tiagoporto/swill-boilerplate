@@ -404,7 +404,7 @@ $ gulp test
 
 This boilerplate uses [gulp.spritesmith](https://www.npmjs.org/package/gulp.spritesmith) to generate bitmap sprites.
 
-When the sprite is generated, a file `_bitmap-sprite.{styl,scss}` is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables is the same of the original filename before the compilation).
+When the sprite is generated, a file `_bitmap-sprite.{styl,scss}` is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables is same as that of the original filename before the compilation).
 
 Just use the mixins with the variables as parameters.
 
@@ -447,7 +447,7 @@ To generate SVG sprites is used [gulp-svg-sprite](https://github.com/jkphl/gulp-
 
     The classname is defined by the `.svg` filename, example:
 
-    * `moon.svg` the classname use the prefix `icon-` and the filename of the svg `moon`.
+    * `moon.svg` the classname uses the prefix `icon-` and the filename of the svg `moon`.
     * If you want use a hover, just name the file, `moon~hover.svg` and use the class `sgv-moon`.
 
 
