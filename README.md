@@ -214,7 +214,7 @@ This boilerplate uses the following technologies:
     - Example
     `myplugin_SEPARATE.js` will be published as `myplugin.js`.
 
-* The folder `public/img` is clean when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images direct in the `public/img/copyright`, they won't be deleted.
+* The folder `public/img` is clean when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the `public/img/copyright`, they won't be deleted.
 
     > If for some other reason you want to use other folders directly in the `public/img`, add the folder in the task ` clean` on `gulpfile.js`, and it won't be deleted.
 
@@ -294,7 +294,7 @@ This boilerplate uses the following technologies:
 
     BrowserSync options, see the browsersync [docs](https://www.browsersync.io/docs/options/).
 
-    If you will use dynamic files, it's necessary to replace the server option by proxy.
+    If you use dynamic files, it's necessary to replace the server option by proxy.
 
     * Example
 
@@ -404,7 +404,7 @@ $ gulp test
 
 This boilerplate uses [gulp.spritesmith](https://www.npmjs.org/package/gulp.spritesmith) to generate bitmap sprites.
 
-When the sprite is generated, a file `_bitmap-sprite.{styl,scss}` is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables is the same of the original filename before the compilation).
+When the sprite is generated, a file `_bitmap-sprite.{styl,scss}` is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables are the same as the original filename before the compilation).
 
 Just use the mixins with the variables as parameters.
 
@@ -434,7 +434,7 @@ Just use the mixins with the variables as parameters.
 
 ### Vector Sprite
 
-To generate SVG sprites is used [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite), as fallback all the SVG sprites are converted to `.png` with [gulp-svg2png](https://github.com/akoenig/gulp-svg2png)
+To generate SVG sprites are used [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite), as fallback all the SVG sprites are converted to `.png` with [gulp-svg2png](https://github.com/akoenig/gulp-svg2png)
 
 * Put the icon in `src/images/sprite`.
 * In HTML put the class in elements
