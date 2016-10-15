@@ -327,7 +327,7 @@ This boilerplate uses the following technologies:
 
 1. Open the files `.csslintrc`, `.editorconfig`, and `.eslintrc` and set your configs to CSSLint, EditorConfig and ESLint respectively.
 
-1. Make a search in the folder project by `{Title}` and `{-}`, and replace by the corrected informations.
+1. Search in the folder project by `{Title}` and `{-}`, and replace with the corrected information.
 
 1. Open the file `src/header-comments.txt` and set your project header.
 
@@ -341,14 +341,14 @@ This boilerplate uses the following technologies:
     $ npm install
     ```
 
-1. Run all the settings and choose the CSS preprocessor that you will use(execute only once).
+1. Run all the settings and choose the CSS preprocessor that you will use (execute only once).
     * Run the task `setup` and pass the parameter the preprocessor.
 
     ```sh
     $gulp setup --sass|stylus
     ```
 
-1. At the first time run the task `gulp` with parameter `compile` and start the development
+1.  On your first run, execute the task `gulp` with parameter `compile` and start the development
 
     ```sh
     $ gulp --compile
@@ -381,19 +381,19 @@ $ gulp compile
 $ gulp build
 ```
 
-**Build Task** (the build task accepts the parameter --serve) - build the project and serve builded project.
+**Build Task** (the build task accepts the parameter --serve) - build the project and serve built project.
 
 ```sh
 $ gulp build --serve
 ```
 
-**Gh-pages Task** - build the project and push the builded folder to gh-pages branch
+**Gh-pages Task** - build the project and push the output folder to gh-pages branch
 
 ```sh
 $ gulp gh-pages
 ```
 
-**Test Task** - run the unit testing
+**Test Task** - run unit tests
 
 ```sh
 $ gulp test
@@ -404,7 +404,7 @@ $ gulp test
 
 This boilerplate uses [gulp.spritesmith](https://www.npmjs.org/package/gulp.spritesmith) to generate bitmap sprites.
 
-When the sprite is generated, a file `_bitmap-sprite.{styl,scss}` is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables is the same of the original filename before the compilation).
+When the sprite is generated, a file `_bitmap-sprite.{styl,scss}` is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables are the same as the original filename before compilation).
 
 Just use the mixins with the variables as parameters.
 
@@ -434,7 +434,7 @@ Just use the mixins with the variables as parameters.
 
 ### Vector Sprite
 
-To generate SVG sprites is used [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite), as fallback all the SVG sprites are converted to `.png` with [gulp-svg2png](https://github.com/akoenig/gulp-svg2png)
+SVG sprites are generated with [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite), and as a fallback, all the SVG sprites are converted to `.png` with [gulp-svg2png](https://github.com/akoenig/gulp-svg2png)
 
 * Put the icon in `src/images/sprite`.
 * In HTML put the class in elements
@@ -443,12 +443,12 @@ To generate SVG sprites is used [gulp-svg-sprite](https://github.com/jkphl/gulp-
     <i class="icon-star-dims icon-star"><i>
     ```
 
-    The class `-dims` get the dimensions and the other the position of the icon in sprite.
+    The class `-dims` gets the dimensions and the other the position of the icon in sprite.
 
     The classname is defined by the `.svg` filename, example:
 
-    * `moon.svg` the classname use the prefix `icon-` and the filename of the svg `moon`.
-    * If you want use a hover, just name the file, `moon~hover.svg` and use the class `sgv-moon`.
+    * `moon.svg` the classname uses the prefix `icon-` and the filename of the svg `moon`.
+    * If you want to use a hover, just name the file `moon~hover.svg` and use the class `sgv-moon`.
 
 
 ## License
