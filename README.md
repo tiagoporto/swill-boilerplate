@@ -6,7 +6,7 @@
 
 > The front-end Boilerplate that you need to start multi-device development, easy to customize.
 > 
-> Visit the [website](http://tiagoporto.github.io/swill-boilerplate/).
+> Visit the [website](http://swillboilerplate.rocks/).
 
 ## Table of Contents
 
