@@ -214,7 +214,7 @@ This boilerplate uses the following technologies:
 
 * The folder `public/img` is cleaned when some tasks are executed, the images come from ` src/images`, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the `public/img/copyright`, they won't be deleted.
 
-    > If for some other reason you want to use other folders directly in the `public/img`, add the folder in the task ` clean` on `gulpfile.js`, and it won't be deleted.
+    > If for some other reason you want to use other folders directly in the `public/img`, add the folder to the task `clean` in `gulpfile.js`, and it won't be deleted.
 
 
 ### Usage
