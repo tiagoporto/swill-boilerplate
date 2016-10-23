@@ -10,9 +10,6 @@
 
 ## Table of Contents
 
-* [Technologies](#technologies)
-* [Includes](#includes)
-* [Features](#features)
 * [Folder Structure](#folder-structure)
 * [Dependencies](#dependencies)
 * [Boilerplate](#boilerplate)
@@ -22,51 +19,6 @@
     * [Vector Sprite](#vector-sprite)
 * [License](#license)
 
-## Technologies
-
-This boilerplate uses the following technologies:
-
-* [Autoprefixer](https://github.com/postcss/autoprefixer)
-* [Babel](https://babeljs.io/)
-* [Bower](http://bower.io/)
-* [BrowserSync](http://www.browsersync.io/)
-* [CSSLint](http://csslint.net/)
-* [EditorConfig](http://editorconfig.org/)
-* [ESLint](http://eslint.org/)
-* [Gulp](http://gulpjs.com/)
-* [Handlebars](http://handlebarsjs.com/)
-* [Jasmine](http://jasmine.github.io/)
-* [Karma](http://karma-runner.github.io/0.13/index.html)
-* [Node.js](http://nodejs.org/)
-* [NPM](https://www.npmjs.com/)
-* [Sass](http://sass-lang.com/) or [Stylus](http://learnboost.github.io/stylus/)
-
-## Includes
-
-* [Functions and mixins](http://tiagoporto.github.io/swill-boilerplate/functions-mixins.html) - CSS preprocessors
-* [Google Analytics](http://www.google.com/analytics/)
-* [jQuery Logo Downloadtip](http://tiagoporto.github.io/jquery-logo-downloadtip/) - Only if jQuery is used
-* [Normalize.css](http://necolas.github.io/normalize.css/)
-* [Outdated Browser](http://outdatedbrowser.com/)
-* [Styles to Basic HTML elements](http://tiagoporto.github.io/swill-boilerplate/components.html) - Only available with Stylus
-
-## Features
-
-* Cleans the assets (build, images, CSS, JS) in the project to maintain the directory organization
-* Compresses Images
-* Generates Sprites with .png
-* Generates Sprites with .svg and a .png to fallback
-* Analyzes CSS with CSS Lint
-* Prefixes CSS with Autoprefixer
-* Compiles Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)
-* Concatenates And Minifies Scripts
-* Analyzes JavaScript with ESLint
-* Compiles ES2015
-* Notifies when tasks are complete
-* Monitors change in the files and reloads browser with BrowserSync
-* Uses Jasmine & Karma to test JavaScript
-* Builds the project compressing HTML, CSS and JS
-* Pushes the `build` folder to gh-pages branch
 
 ## Folder Structure
 
