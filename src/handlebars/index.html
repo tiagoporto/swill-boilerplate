@@ -240,7 +240,7 @@ npm install -g generator-swill-boilerplate</code></pre>
 
     <p>The folder <kbd>public/img</kbd> is cleaned when some tasks are executed, the images come from <kbd>src/images</kbd>, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the <kbd>public/img/copyright</kbd>, they won't be deleted.</p>
 
-    <!-- <blockquote>If for some other reason you want to use other folders directly in the `public/img`, add the folder to the task `clean` in `gulpfile.js`, and it won't be deleted.</blockquote> -->
+    <p>If for some other reason you want to use other folders, add the path in <kbd>basePaths.clean.ignore</kbd> on <a href="#config">config.json</a>, and it won't be deleted.</p>
 
     <h3>Tasks</h3>
 
@@ -271,6 +271,93 @@ npm install -g generator-swill-boilerplate</code></pre>
     <p><strong>Test Task</strong> - run unit tests</p>
 
     <pre><code>$ gulp test</code></pre>
+
+
+    <h3 id="config">Config</h3>
+
+    <p>Open the file <kbd>config.json</kbd> and setting as needed.</p>
+
+    <h4>basePaths</h4>
+
+    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+
+    <p>Application paths.</p>
+
+
+    <h4>components</h4>
+
+    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+    <p>Basic styles, only available with Stylus.</p>
+    <!-- <p>Basic styles to <a href="components.html">components</a>, only available with Stylus.</p> -->
+
+
+    <h4>jQuery</h4>
+
+    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+
+    <h4>lintCSS</h4>
+
+    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+
+    <h4>lintJS</h4>
+
+    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+
+    <h4>handlebars</h4>
+
+    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+
+    <h4>inlineSVG</h4>
+
+    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+    <p>Enable SVG inline. Only available with handlebars.</p>
+
+    <p><a href="https://github.com/tiagoporto/jquery-svg-to-inline">jQuery svg to inline</a> is an option to use without handlebars</p>
+
+
+    <h4>autoprefixerBrowsers</h4>
+
+    <p><strong>Type:</strong> <kbd>Array</kbd></p>
+
+    <p>Autoprefixer option, see the autoprefixer <a href="https://github.com/postcss/autoprefixer#options">docs</a>.</p>
+
+
+    <h4>browserSync</h4>
+
+    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+
+    <p>BrowserSync options, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
+
+    <p>If you use dynamic files, it's necessary to replace the server option by proxy.</p>
+
+    <h5>Example</h5>
+
+    <code><pre>"browserSyncConfig": {
+    "notify": false,
+    "logPrefix": "BrowserSync",
+    "server": {
+        "baseDir": ["src/", "public/"]
+    }
+}</pre></code>
+
+    <code><pre>"browserSyncConfig": {
+    "notify": false,
+    "logPrefix": "BrowserSync",
+    "proxy": "localhost/swill-boilerplate/public/"
+}</pre></code>
+
+
+    <h4>browserSyncBuild</h4>
+
+    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+
+    <p>BrowserSync options for the built project, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
 
 
     <h3>Bitmap Sprite</h3>
