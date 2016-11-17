@@ -36,10 +36,7 @@ html {
        box-sizing: inherit;
 }
 body {
-  background: -webkit-linear-gradient(top, #fff, #d1d1d1);
-  background: linear-gradient(to bottom, #fff, #d1d1d1);
-  background-attachment: fixed;
-  font: normal normal 18px/1.3333333333em Helvetica, Arial, sans-serif;
+  font: normal normal 16px/1.5em Helvetica, Arial, sans-serif;
   background-color: #fff;
   color: #000;
   text-rendering: optimizeLegibility;
@@ -78,46 +75,46 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.25em;
   line-height: 1.333333333333333em;
   margin-top: 0.666666666666667em;
   margin-bottom: 0.666666666666667em;
 }
 h2 {
-  font-size: 1.777777777777778em;
+  font-size: 2em;
   line-height: 1.5em;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
 h3 {
-  font-size: 1.666666666666667em;
+  font-size: 1.875em;
   line-height: 1.6em;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
 h4 {
-  font-size: 1.555555555555556em;
+  font-size: 1.75em;
   line-height: 1.714285714285714em;
   margin-top: 0.857142857142857em;
   margin-bottom: 0.857142857142857em;
 }
 h5 {
-  font-size: 1.333333333333333em;
+  font-size: 1.5em;
   line-height: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 h6 {
-  font-size: 1.111111111111111em;
+  font-size: 1.25em;
   line-height: 1.2em;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
 }
 p {
   font-size: 1em;
-  line-height: 1.333333333333333em;
-  margin-top: 1.333333333333333em;
-  margin-bottom: 1.333333333333333em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
       -ms-hyphens: auto;
@@ -133,10 +130,10 @@ a:hover {
 }
 blockquote {
   font-style: italic;
-  padding-left: 0.5555555555em;
-  border-left: 0.2777777777em solid #999;
-  margin-top: 1.333333333333333em;
-  margin-bottom: 1.333333333333333em;
+  padding-left: 0.625em;
+  border-left: 0.3125em solid #999;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 kbd {
   color: #fff;
@@ -148,23 +145,23 @@ kbd {
 code {
   color: #0f0;
   background: #242424;
-  padding: 0 0.6666666666em;
-  padding-top: 0.666666666666667em;
-  padding-bottom: 0.666666666666667em;
+  padding: 0 0.75em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
   width: 100%;
   display: inline-block;
   border-radius: 6px;
   overflow: auto;
-  margin-top: 1.333333333333333em;
-  margin-bottom: 1.333333333333333em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 fieldset {
   margin: 0;
   border-color: #999;
   border-style: solid;
-  border-width: 0.055555555555556em;
-  padding: 1.277777777777778em;
-  margin-bottom: 1.333333333333333em;
+  border-width: 0.0625em;
+  padding: 1.4375em;
+  margin-bottom: 1.5em;
 }
 input[type="text"],
 input[type="search"],
@@ -174,15 +171,15 @@ input[type="password"],
 select,
 textarea {
   font-size: 1em;
-  line-height: 1.333333333333333em;
+  line-height: 1.5em;
   border-color: #999;
   border-style: solid;
-  border-width: 0.055555555555556em;
-  padding: 0.277777777777778em;
+  border-width: 0.0625em;
+  padding: 0.3125em;
   border-radius: 5px;
   color: #595959;
   width: 100%;
-  margin-bottom: 0.666666666666667em;
+  margin-bottom: 0.75em;
 }
 input[type="text"]:focus,
 input[type="search"]:focus,
@@ -201,26 +198,26 @@ input[type="email"],
 input[type="number"],
 input[type="password"],
 select {
-  height: 2em;
+  height: 2.25em;
 }
 select {
   width: auto;
 }
 ::-webkit-input-placeholder {
   color: #8c8c8c;
-  font-size: 0.8888888888em;
+  font-size: 0.875em;
 }
 ::-moz-placeholder {
   color: #8c8c8c;
-  font-size: 0.8888888888em;
+  font-size: 0.875em;
 }
 :-ms-input-placeholder {
   color: #8c8c8c;
-  font-size: 0.8888888888em;
+  font-size: 0.875em;
 }
 ::placeholder {
   color: #8c8c8c;
-  font-size: 0.8888888888em;
+  font-size: 0.875em;
 }
 button,
 input[type="button"],
@@ -230,12 +227,12 @@ button:disabled,
 input[type="button"]:disabled,
 input[type="reset"]:disabled,
 input[type="submit"]:disabled {
-  font-size: 0.888888888888889em;
-  line-height: 1.5em;
+  font-size: 0.875em;
+  line-height: 1.714285714285714em;
   border: none;
   border-radius: 5px;
   display: inline-block;
-  padding: 0 1.1111111111em;
+  padding: 0 1.25em;
   overflow: hidden;
   margin: 0;
   text-align: center;
