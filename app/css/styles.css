@@ -155,6 +155,9 @@ code {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
+pre {
+  overflow: auto;
+}
 fieldset {
   margin: 0;
   border-color: #999;
