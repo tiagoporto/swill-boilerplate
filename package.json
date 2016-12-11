@@ -27,7 +27,7 @@
   "scripts": {},
   "files": [],
   "dependencies": {
-    "jeet": "6.1.2",
+    "jeet": "7.1.0",
     "jquery": "3.1.1",
     "jquery-logo-downloadtip": "2.0.0",
     "normalize.css": "4.2.0",
