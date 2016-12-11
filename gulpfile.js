@@ -1,5 +1,5 @@
 /*
-* Swill Boilerplate v0.4.0beta
+* Swill Boilerplate v0.7.0beta
 * https://github.com/tiagoporto/swill-boilerplate
 * Copyright (c) 2014-2016 Tiago Porto (http://tiagoporto.com)
 * Released under the MIT license
@@ -20,6 +20,7 @@ var args = require('yargs').argv,
     handlebars = require('gulp-hb'),
     Karma = require('karma').Server,
     merge = require('merge-stream'),
+    mergeMediaQueries = require('gulp-merge-media-queries'),
     plugins = require('gulp-load-plugins')(),
     sequence = require('run-sequence'),
     spritesmith = require('gulp.spritesmith'),
@@ -86,7 +87,9 @@ gulp.task('handlebars', function() {
             .pipe(handlebars({
                 partials: paths.html.src + basePaths.handlebars.partials.src + '**/*.hbs'
             }))
-            .pipe(gulp.dest(basePaths.dest));
+            .pipe(plugins.w3cjs())
+            .pipe(gulp.dest(basePaths.dest))
+            .pipe(plugins.notify({message: 'Handlebars task complete', onLast: true}));
     }
 });
 
@@ -145,6 +148,7 @@ gulp.task('styles', function() {
         .pipe(plugins.wrapper({
             header: headerProject + '\n'
         }))
+        .pipe(mergeMediaQueries({log: true}))
         .pipe(plugins.if(config.lintCSS, plugins.csslint('./.csslintrc')))
         .pipe(plugins.if(config.lintCSS, plugins.csslint.formatter()))
         .pipe(gulp.dest(paths.styles.dest))
@@ -272,7 +276,7 @@ gulp.task('vendor-scripts', function() {
 
 // Concatenate and Minify Main Scripts
 gulp.task('scripts', function() {
-    var babelOption = { presets: ['es2015'] };
+    var babelOption = { presets: ['es2015', 'es2016', 'es2017'] };
     var headerWrapper = { header: headerProject + '\n' };
     var jQueryWrapper = {
         header: 'jQuery(document).ready(function($) {\n\n',
@@ -368,15 +372,15 @@ gulp.task('combine-assets', function() {
 
 // Clean Directories
 gulp.task('clean', function(cb) {
-    return del([
+    var cleanPaths = [
         basePaths.build,
         paths.styles.dest,
         paths.scripts.dest,
         paths.styles.src + 'helpers/{_bitmap-sprite,_vetor-sprite}.{styl,scss}',
-        paths.images.dest + '**/*',
-        // Add here the folders that will not be deleted in app/img
-        '!' + paths.images.dest + '{copyright,logos}{,**/*{,**/*}}'
-    ], cb);
+        paths.images.dest + '**/*'
+    ];
+
+    return del(cleanPaths.concat(basePaths.clean.ignore), cb);
 });
 
 // ***************************** Main Tasks ******************************* //

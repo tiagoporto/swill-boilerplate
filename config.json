@@ -32,6 +32,12 @@
     "styles": {
       "src": "stylesheets/",
       "dest": "css/"
+    },
+
+    "clean": {
+      "ignore": [
+        "!app/img/{copyright,logos}{,**/*{,**/*}}"
+      ]
     }
   },
 
