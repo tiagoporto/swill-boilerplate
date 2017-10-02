@@ -15,13 +15,16 @@
       "scripts concatenation",
       "live browser reloading",
       "cross-device synchronization",
-      "html validation"
+      "html validation",
+      "browserify",
+      "handlebars"
     ],
     "language": "en",
     "authorName": "Tiago Porto",
     "authorEmail": "tiago@tiagoporto.com",
     "authorHomepage": "http://www.tiagoporto.com",
     "githubUser": "tiagoporto",
+    "handlebars": true,
     "settingFolder": false,
     "preprocessor": "stylus",
     "options": [
@@ -37,7 +40,10 @@
       "readme",
       "contributing",
       "404",
+      "manifestJson",
+      "browserconfig",
       "humans"
-    ]
+    ],
+    "license": "MIT"
   }
 }
