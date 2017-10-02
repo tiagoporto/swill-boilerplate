@@ -4,7 +4,7 @@
     <img src="http://tiagoporto.github.io/swillboilerplate.rocks/img/logos/logo.png" alt="Swill Boilerplate Logo">
 </p>
 
-> The front-end Boilerplate that you need to start easily customizable multi-device development.
+> 🍺 The front-end Boilerplate that you need to start easily customizable multi-device development.
 >
 > Visit the [website](http://swillboilerplate.rocks/).
 
