@@ -1,62 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Swill Boilerplate</title>
-        <meta name="description" content="🍺 The front-end Boilerplate that you need to start easily customizable multi-device development.">
-        <meta name="keywords" content="template, gulp, boilerplate, customizable, automation, stylus, sass, image optimization, scripts concatenation, live browser reloading, cross-device synchronization, html validation">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="author" href="humans.txt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Swill Boilerplate</title>
+    <meta name="description" content="🍺 The front-end Boilerplate that you need to start easily customizable multi-device development.">
+    <meta name="keywords" content="template,gulp,boilerplate,customizable,automation,stylus,sass,image optimization,scripts concatenation,live browser reloading,cross-device synchronization,html validation,browserify,handlebars">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="author" href="humans.txt">
+    <link rel="manifest" href="/manifest.json">
 
-        <!-- Logos downloadtip -->
-        <link rel="icon" type="image/png" href="img/logos/logo.png" data-title="Screen Bitmap file (.png)">
-        <link rel="icon" type="image/png" href="img/logos/logo-monochrome.png" data-title="Screen Monochrome Bitmap file (.png)">
-        <link rel="icon" type="image/svg+xml" href="img/logos/logo.svg" data-title="Screen Vector file (.svg)">
-        <link rel="icon" type="image/svg+xml" href="img/logos/logo-monochrome.svg" data-title="Screen Monochrome Vector file (.svg)">
-        <link rel="icon" type="image/eps" href="img/logos/logo.eps" data-title="Print file (.eps)">
-        <link rel="icon" type="image/eps" href="img/logos/logo-monochrome.eps" data-title="Print Monochrome file (.eps)">
+    <!-- Logos downloadtip -->
+    <link rel="icon" type="image/png" href="img/logos/logo.png" data-title="Screen Bitmap file (.png)">
+    <link rel="icon" type="image/png" href="img/logos/logo-monochrome.png" data-title="Screen Monochrome Bitmap file (.png)">
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo.svg" data-title="Screen Vector file (.svg)">
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo-monochrome.svg" data-title="Screen Monochrome Vector file (.svg)">
+    <link rel="icon" type="image/eps" href="img/logos/logo.eps" data-title="Print file (.eps)">
+    <link rel="icon" type="image/eps" href="img/logos/logo-monochrome.eps" data-title="Print Monochrome file (.eps)">
 
-        <!-- Add to homescreen for Chrome on Android -->
-        <meta name="theme-color" content="#42AB94">
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="img/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="theme-color" content="">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/touch/chrome-touch-icon-192x192.png">
 
-        <!-- Add to homescreen for Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="Swill Boilerplate">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Swill Boilerplate">
+    <link rel="apple-touch-icon" href="img/touch/apple-touch-icon.png">
 
-        <!-- Tile icon for Win8 -->
-        <meta name="application-name" content="Swill Boilerplate">
-        <meta name="msapplication-TileColor" content="#42AB94">
-        <meta name="msapplication-square70x70logo" content="img/touch/tile.png">
-        <meta name="msapplication-square150x150logo" content="img/touch/tile.png">
-        <meta name="msapplication-wide310x150logo" content="img/touch/tile-wide.png">
-        <meta name="msapplication-square310x310logo" content="img/touch/tile.png">
+    <!-- build:css css/styles.combined.min.css -->
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="../node_modules/outdatedbrowser/outdatedbrowser/outdatedbrowser.css">
+    <link rel="stylesheet" href="../node_modules/jquery-logo-downloadtip/css/jquery-logo-downloadtip.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated"></div>
+    <!-- ============================================ -->
 
-        <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-        <!--
-        <link rel="canonical" href="http://www.example.com/">
-        -->
-
-        <!-- build:css css/styles.combined.min.css -->
-        <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
-        <link rel="stylesheet" href="../node_modules/outdated-browser/outdatedbrowser/outdatedbrowser.css">
-        <link rel="stylesheet" href="../node_modules/jquery-logo-downloadtip/css/jquery-logo-downloadtip.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!-- ============= Outdated Browser ============= -->
-        <div id="outdated"></div>
-        <!-- ============================================ -->
-
-        <header class="header">
-            <h1>
-                <a href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 250 250" class="swill-boilerplate-logo" id="logo" alt="Swill Boileplate Logo" width="250">
+    <header class="header">
+      <h1>
+          <a href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 250 250" class="swill-boilerplate-logo" id="logo" alt="Swill Boileplate Logo" width="250">
     <style>
     .swill-boilerplate-logo__circle{
         fill:#42AB94;
@@ -205,410 +193,410 @@
       </g>
     </g>
 </svg>
-                </a>
-            </h1>
 
-            <p>The front-end Boilerplate that you need to start easily customizable multi-device development.</p>
+          </a>
+      </h1>
 
-            <a href="https://github.com/tiagoporto/generator-swill-boilerplate" class="github-corner">
-                <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
-                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
-                    <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
-                    <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
-                </svg>
-            </a>
+      <p>The front-end Boilerplate that you need to start easily customizable multi-device development.</p>
 
-            <p>
-                <a class="github-button" href="https://github.com/tiagoporto" data-count-href="/tiagoporto/followers" data-count-api="/users/tiagoporto#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @tiagoporto on GitHub">Follow @tiagoporto</a>
+      <a href="https://github.com/tiagoporto/generator-swill-boilerplate" class="github-corner">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#64CEAA; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+          <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+          <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+        </svg>
+      </a>
 
-                <a class="github-button" href="https://github.com/tiagoporto/generator-swill-boilerplate" data-icon="octicon-star" data-count-href="/tiagoporto/generator-swill-boilerplate/stargazers" data-count-api="/repos/tiagoporto/generator-swill-boilerplate#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tiagoporto/generator-swill-boilerplate on GitHub">Star</a>
+      <p>
+        <a class="github-button" href="https://github.com/tiagoporto" data-count-href="/tiagoporto/followers" data-count-api="/users/tiagoporto#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @tiagoporto on GitHub">Follow @tiagoporto</a>
 
-                <a class="github-button" href="https://github.com/tiagoporto/generator-swill-boilerplate/issues" data-icon="octicon-issue-opened" data-count-api="/repos/tiagoporto/generator-swill-boilerplate#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue tiagoporto/generator-swill-boilerplate on GitHub">Issue</a>
+        <a class="github-button" href="https://github.com/tiagoporto/generator-swill-boilerplate" data-icon="octicon-star" data-count-href="/tiagoporto/generator-swill-boilerplate/stargazers" data-count-api="/repos/tiagoporto/generator-swill-boilerplate#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tiagoporto/generator-swill-boilerplate on GitHub">Star</a>
 
-                <a class="github-button" href="https://github.com/tiagoporto/generator-swill-boilerplate/fork" data-icon="octicon-git-branch" data-count-href="/tiagoporto/generator-swill-boilerplate/network" data-count-api="/repos/tiagoporto/generator-swill-boilerplate#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tiagoporto/generator-swill-boilerplate on GitHub">Fork</a>
-            </p>
+        <a class="github-button" href="https://github.com/tiagoporto/generator-swill-boilerplate/issues" data-icon="octicon-issue-opened" data-count-api="/repos/tiagoporto/generator-swill-boilerplate#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue tiagoporto/generator-swill-boilerplate on GitHub">Issue</a>
 
-        </header>
+        <a class="github-button" href="https://github.com/tiagoporto/generator-swill-boilerplate/fork" data-icon="octicon-git-branch" data-count-href="/tiagoporto/generator-swill-boilerplate/network" data-count-api="/repos/tiagoporto/generator-swill-boilerplate#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tiagoporto/generator-swill-boilerplate on GitHub">Fork</a>
+      </p>
+    </header>
 
-        <main class="main">
+    <main class="main">
 
 
-    <!-- <nav>
-        <ul>
-            <li>
-                <a href="https://github.com/tiagoporto/swillboilerplate.rocks/blob/master/README.md">Docs</a>
-            </li>
-
-            <li>
-                <a href="components.html">Components</a>
-            </li>
-
-            <li>
-                <a href="functions-mixins.html">Functions and Mixins</a>
-            </li>
-        </ul>
-    </nav> -->
-
-    <p>This website is still in progress.</p>
-
-    <h2>Features</h2>
-
+  <!-- <nav>
     <ul>
-        <li>Cleans the assets (build, images, CSS, JS) in the project to maintain the directory organization</li>
-        <li>Compresses Images</li>
-        <li>Generates Sprites with .png</li>
-        <li>Generates Sprites with .svg and a .png to fallback</li>
-        <li>Analyzes CSS with CSS Lint</li>
-        <li>Prefixes CSS with Autoprefixer</li>
-        <li>Compiles Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)</li>
-        <li>Concatenates And Minifies Scripts</li>
-        <li>Analyzes JavaScript with ESLint</li>
-        <li>Compiles ES2015</li>
-        <li>Notifies when tasks are complete</li>
-        <li>Monitors change in the files and reloads browser with BrowserSync</li>
-        <li>Uses Jasmine & Karma to test JavaScript</li>
-        <li>Builds the project compressing HTML, CSS and JS</li>
-        <li>Pushes the build folder to gh-pages branch</li>
+      <li>
+        <a href="https://github.com/tiagoporto/swillboilerplate.rocks/blob/master/README.md">Docs</a>
+      </li>
+
+      <li>
+        <a href="components.html">Components</a>
+      </li>
+
+      <li>
+        <a href="functions-mixins.html">Functions and Mixins</a>
+      </li>
     </ul>
+  </nav> -->
 
-    <h2>Technologies</h2>
+  <p>This website is still in progress.</p>
 
-    <p>This boilerplate uses the following technologies:</p>
+  <h2>Features</h2>
 
-    <ul>
-        <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
-        <li><a href="https://babeljs.io">Babel</a></li>
-        <li><a href="http://www.browsersync.io">BrowserSync</a></li>
-        <li><a href="http://csslint.net">CSSLint</a></li>
-        <li><a href="http://editorconfig.org">EditorConfig</a></li>
-        <li><a href="http://eslint.org">ESLint</a></li>
-        <li><a href="http://gulpjs.com">Gulp</a></li>
-        <li><a href="http://handlebarsjs.com">Handlebars</a></li>
-        <li><a href="http://jasmine.github.io">Jasmine</a></li>
-        <li><a href="http://karma-runner.github.io/0.13/index.html">Karma</a></li>
-        <li><a href="http://nodejs.org">Node.js</a></li>
-        <li><a href="https://www.npmjs.com">NPM</a></li>
-        <li><a href="http://sass-lang.com">Sass</a> or <a href="http://learnboost.github.io/stylus">Stylus</a></li>
-    </ul>
+  <ul>
+    <li>Cleans the assets (build, images, CSS, JS) in the project to maintain the directory organization</li>
+    <li>Compresses Images</li>
+    <li>Generates Sprites with .png</li>
+    <li>Generates Sprites with .svg and a .png to fallback</li>
+    <li>Analyzes CSS with CSS Lint</li>
+    <li>Prefixes CSS with Autoprefixer</li>
+    <li>Compiles Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)</li>
+    <li>Concatenates And Minifies Scripts</li>
+    <li>Analyzes JavaScript with ESLint</li>
+    <li>Compiles ES2015</li>
+    <li>Notifies when tasks are complete</li>
+    <li>Monitors change in the files and reloads browser with BrowserSync</li>
+    <li>Uses Jasmine & Karma to test JavaScript</li>
+    <li>Builds the project compressing HTML, CSS and JS</li>
+    <li>Pushes the build folder to gh-pages branch</li>
+  </ul>
 
-    <h2>Includes</h2>
+  <h2>Technologies</h2>
 
-    <ul>
-        <li>Functions and mixins - CSS preprocessors</li>
-        <!-- <li><a href="functions-mixins.html">Functions and mixins</a> - CSS preprocessors</li> -->
-        <li><a href="http://www.google.com/analytics">Google Analytics</a></li>
-        <li><a href="http://tiagoporto.github.io/jquery-logo-downloadtip">jQuery Logo Downloadtip</a> - Only if jQuery is used</li>
-        <li><a href="http://necolas.github.io/normalize.css">Normalize.css</a></li>
-        <li><a href="http://outdatedbrowser.com">Outdated Browser</a></li>
-        <li>Styles to Basic HTML elements - Only available with Stylus</li>
-        <!-- <li><a href="components.html">Styles to Basic HTML elements</a> - Only available with Stylus</li> -->
-    </ul>
+  <p>This boilerplate uses the following technologies:</p>
 
-    <h2>Installation</h2>
+  <ul>
+    <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
+    <li><a href="https://babeljs.io">Babel</a></li>
+    <li><a href="http://www.browsersync.io">BrowserSync</a></li>
+    <li><a href="http://csslint.net">CSSLint</a></li>
+    <li><a href="http://editorconfig.org">EditorConfig</a></li>
+    <li><a href="http://eslint.org">ESLint</a></li>
+    <li><a href="http://gulpjs.com">Gulp</a></li>
+    <li><a href="http://handlebarsjs.com">Handlebars</a></li>
+    <li><a href="http://jasmine.github.io">Jasmine</a></li>
+    <li><a href="http://karma-runner.github.io/0.13/index.html">Karma</a></li>
+    <li><a href="http://nodejs.org">Node.js</a></li>
+    <li><a href="https://www.npmjs.com">NPM</a></li>
+    <li><a href="http://sass-lang.com">Sass</a> or <a href="http://learnboost.github.io/stylus">Stylus</a></li>
+  </ul>
 
-    <p>First, install Yeoman and generator-swill-boilerplate using npm (we assume you have pre-installed node.js).</p>
+  <h2>Includes</h2>
 
-<pre><code>npm install -g yo
+  <ul>
+    <li>Functions and mixins - CSS preprocessors</li>
+    <!-- <li><a href="functions-mixins.html">Functions and mixins</a> - CSS preprocessors</li> -->
+    <li><a href="http://www.google.com/analytics">Google Analytics</a></li>
+    <li><a href="http://tiagoporto.github.io/jquery-logo-downloadtip">jQuery Logo Downloadtip</a> - Only if jQuery is used</li>
+    <li><a href="http://necolas.github.io/normalize.css">Normalize.css</a></li>
+    <li><a href="http://outdatedbrowser.com">Outdated Browser</a></li>
+    <li>Styles to Basic HTML elements - Only available with Stylus</li>
+    <!-- <li><a href="components.html">Styles to Basic HTML elements</a> - Only available with Stylus</li> -->
+  </ul>
+
+  <h2>Installation</h2>
+
+  <p>First, install Yeoman and generator-swill-boilerplate using npm (we assume you have pre-installed node.js).</p>
+
+  <pre><code>npm install -g yo
 npm install -g generator-swill-boilerplate</code></pre>
 
 
-    <p>Then generate your new project:</p>
+  <p>Then generate your new project:</p>
 
-    <pre><code>yo swill-boilerplate</code></pre>
-
-
-    <h2>Usage</h2>
-
-    <ol>
-        <li>Open the files <kbd>.csslintrc</kbd>, <kbd>.editorconfig</kbd>, and <kbd>.eslintrc</kbd> and set your configs to CSSLint, EditorConfig and ESLint respectively.</li>
-
-        <li>Open the file <kbd>src/header-comments.txt</kbd> and set your project header.</li>
-
-        <li>Open the terminal and go to the local folder.</li>
-
-        <li>On your first run, execute the task <kbd>gulp</kbd> with parameter <kbd>compile</kbd> and start the development
-        <pre><code>$ gulp --compile</code></pre>
-        </li>
-    </ol>
+  <pre><code>yo swill-boilerplate</code></pre>
 
 
-    <h2>Folder Structure</h2>
+  <h2>Usage</h2>
 
-<div>
-<pre>
-./
-├──┐
-│  │
-│  ├─ app // Public files
-│  │  │
-│  │  ├─ css
-│  │  │  └─ // Public styles
-│  │  │
-│  │  ├─ fonts
-│  │  │  └─ // Web Fonts
-│  │  │
-│  │  ├─ img
-│  │  │  │
-│  │  │  ├─ copyright // Images with copyright metadata
-│  │  │  │
-│  │  │  ├─ logos // Logos of the projet
-│  │  │  │
-│  │  │  └─ // Public images
-│  │  │
-│  │  ├─ js
-│  │  │  └─ // Public scripts
-│  │  │
-│  │  ├─ apple-touch-icon.png // Icon for Safari on iOS
-│  │  │
-│  │  ├─ favicon.ico //Icon for address bar and bookmark
-│  │  │
-│  │  ├─ index.html
-│  │  │
-│  │  └─ // HTML, PHP, etc Files
-│  │
-│  ├─ spec // Scripts test
-│  │
-│  └─ src // Source files for the projects
-│       │
-│       ├─ handlebars
-│       │  │
-│       │  ├─ includes // Handlebars partials
-│       │  │
-│       │  └─ // Handlebars templates
-│       │
-│       ├─ images // Original images, don't compressed
-│       │  │
-│       │  ├─ sprite // Images to generate the sprite
-│       │  │
-│       │  ├─ touch // Icons
-│       │  │   │
-│       │  │   ├─ chrome-touch-icon-192x192.png // Icon for Chrome on Android
-│       │  │   │
-│       │  │   ├─ icon-128x128.png // Icon for Firefox on FirefoxOS
-│       │  │   │
-│       │  │   ├─ tile.png // Tile icon for Win8
-│       │  │   │
-│       │  │   └─ tile-wide.png // Wide tile icon for Win8
-│       │  │
-│       │  └─ // .jpg, .jpeg, .gif, .svg and .bmp to be compressed
-│       │
-│       ├─ scripts
-│       │  │
-│       │  ├─ settings
-│       │  │  │
-│       │  │  ├─ call_plugins.js // Call the plugins after page load
-│       │  │  │
-│       │  │  └─ google_analytics.js
-│       │  │
-│       │  └─ // Scripts
-│       │
-│       ├─ stylesheets
-│       │    │
-│       │    ├─ components
-│       │    │
-│       │    ├─ helpers
-│       │    │  │
-│       │    │  ├─ functions // All files here will be concatenated to ../functions.{scss, styl}
-│       │    │  │
-│       │    │  ├─ mixins // All files here will be concatenated to ../mixins.{scss, styl}
-│       │    │  │
-│       │    │  └─ _helpers.{scss, styl} // Helper tips to preprocessor syntax
-│       │    │
-│       │    ├─ partials // Styles to base tags
-│       │    │
-│       │    ├─ settings
-│       │    │  │
-│       │    │  ├─ _variables.{sass, styl}
-│       │    │  │
-│       │    │  └─ _web-fonts.{sass, styl}
-│       │    │
-│       │    ├─ _base.{sass, styl} // Main Styles
-│       │    │
-│       │    └─ styles.{sass, styl} // Base file with imports
-│       │
-│       ├─ vendors // Third-party code
-│       │
-│       └─ header-comments.txt // Header to styles and Scripts
-│
-├─ .bowerrc // Bower configuration file
-├─ .csslintrc // CSSLint configuration file
-├─ .editorconfig // Editorconfig configuration file
-├─ .eslintrc // ESLint configuration file
-├─ bower.json // Bower dependencies
-├─ config.json // Swill configuration file
-├─ gulpfile.js // Gulp file
-├─ LICENSE.md // Swill License
-├─ karma.conf.js // Karma configuration file
-├─ package.json // NPM dependencies
-└─ README.md // Documentation</pre>
-</div>
+  <ol>
+    <li>Open the files <kbd>.csslintrc</kbd>, <kbd>.editorconfig</kbd>, and <kbd>.eslintrc</kbd> and set your configs to CSSLint, EditorConfig and ESLint respectively.</li>
 
-    <h2>Dependencies</h2>
+    <li>Open the file <kbd>src/header-comments.txt</kbd> and set your project header.</li>
 
-    <ol>
-        <li>Download and install the <a href="http://editorconfig.org/#download">EditorConfig plugin</a> for your text editor.</li>
+    <li>Open the terminal and go to the local folder.</li>
 
-        <li>Download and install <a href="http://nodejs.org/download">Node.js</a>
-            <ul><li>Select npm package manager</li></ul>
-        </li>
-
-        <li>Install <a href="http://gulpjs.com">Gulp</a>
-            <ul>
-                <li>Open command line and executec
-                <pre><code>$ npm install -g gulp</code></pre>
-                </li>
-            </ul>
-        </li>
-    </ol>
-
-    <h2>Boilerplate</h2>
-
-    <p>JavaScript files in <kbd>src/scripts</kbd> named with <kbd>*_IGNORE.js</kbd> will be ignored and won't be published, named with <kbd>*_SEPARATE.js</kbd> won't be concatenated and will be generated separately.</p>
-    <p>Example</p>
-    <p><kbd>myplugin_SEPARATE.js</kbd> will be published as <kbd>myplugin.js</kbd>.</p>
-
-    <p>The folder <kbd>public/img</kbd> is cleaned when some tasks are executed, the images come from <kbd>src/images</kbd>, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the <kbd>public/img/copyright</kbd>, they won't be deleted.</p>
-
-    <p>If for some other reason you want to use other folders, add the path in <kbd>basePaths.clean.ignore</kbd> on <a href="#config">config.json</a>, and it won't be deleted.</p>
-
-    <h3>Tasks</h3>
-
-    <p><strong>Default Task</strong> - serve the project and watch (Alias to <kbd>gulp serve</kbd>)</p>
-
-    <pre><code>$ gulp</code></pre>
-
-    <p><strong>Default Task</strong> (the default task accepts the parameter --compile) - clean assets, compile, watch and serve the project.</p>
-
+    <li>On your first run, execute the task <kbd>gulp</kbd> with parameter <kbd>compile</kbd> and start the development
     <pre><code>$ gulp --compile</code></pre>
-
-    <p><strong>Compile Task</strong> - clean assets and compile the project.</p>
-
-    <pre><code>$ gulp compile</code></pre>
-
-    <p><strong>Build Task</strong> - build the project</p>
-
-    <pre><code>$ gulp build</code></pre>
-
-    <p><strong>Build Task</strong> (the build task accepts the parameter --serve) - build the project and serve built project.</p>
-
-    <pre><code>$ gulp build --serve</code></pre>
-
-    <p><strong>Gh-pages Task</strong> - build the project and push the output folder to gh-pages branch</p>
-
-    <pre><code>$ gulp gh-pages</code></pre>
-
-    <p><strong>Test Task</strong> - run unit tests</p>
-
-    <pre><code>$ gulp test</code></pre>
+    </li>
+  </ol>
 
 
-    <h3 id="config">Config</h3>
+  <h2>Folder Structure</h2>
 
-    <p>Open the file <kbd>config.json</kbd> and setting as needed.</p>
+  <div>
+    <pre>
+    ./
+    ├──┐
+    │  │
+    │  ├─ app // Public files
+    │  │  │
+    │  │  ├─ css
+    │  │  │  └─ // Public styles
+    │  │  │
+    │  │  ├─ fonts
+    │  │  │  └─ // Web Fonts
+    │  │  │
+    │  │  ├─ img
+    │  │  │  │
+    │  │  │  ├─ copyright // Images with copyright metadata
+    │  │  │  │
+    │  │  │  ├─ logos // Logos of the projet
+    │  │  │  │
+    │  │  │  └─ // Public images
+    │  │  │
+    │  │  ├─ js
+    │  │  │  └─ // Public scripts
+    │  │  │
+    │  │  ├─ apple-touch-icon.png // Icon for Safari on iOS
+    │  │  │
+    │  │  ├─ favicon.ico //Icon for address bar and bookmark
+    │  │  │
+    │  │  ├─ index.html
+    │  │  │
+    │  │  └─ // HTML, PHP, etc Files
+    │  │
+    │  ├─ spec // Scripts test
+    │  │
+    │  └─ src // Source files for the projects
+    │       │
+    │       ├─ handlebars
+    │       │  │
+    │       │  ├─ includes // Handlebars partials
+    │       │  │
+    │       │  └─ // Handlebars templates
+    │       │
+    │       ├─ images // Original images, don't compressed
+    │       │  │
+    │       │  ├─ sprite // Images to generate the sprite
+    │       │  │
+    │       │  ├─ touch // Icons
+    │       │  │   │
+    │       │  │   ├─ chrome-touch-icon-192x192.png // Icon for Chrome on Android
+    │       │  │   │
+    │       │  │   ├─ icon-128x128.png // Icon for Firefox on FirefoxOS
+    │       │  │   │
+    │       │  │   ├─ tile.png // Tile icon for Win8
+    │       │  │   │
+    │       │  │   └─ tile-wide.png // Wide tile icon for Win8
+    │       │  │
+    │       │  └─ // .jpg, .jpeg, .gif, .svg and .bmp to be compressed
+    │       │
+    │       ├─ scripts
+    │       │  │
+    │       │  ├─ settings
+    │       │  │  │
+    │       │  │  ├─ call_plugins.js // Call the plugins after page load
+    │       │  │  │
+    │       │  │  └─ google_analytics.js
+    │       │  │
+    │       │  └─ // Scripts
+    │       │
+    │       ├─ stylesheets
+    │       │    │
+    │       │    ├─ components
+    │       │    │
+    │       │    ├─ helpers
+    │       │    │  │
+    │       │    │  ├─ functions // All files here will be concatenated to ../functions.{scss, styl}
+    │       │    │  │
+    │       │    │  ├─ mixins // All files here will be concatenated to ../mixins.{scss, styl}
+    │       │    │  │
+    │       │    │  └─ _helpers.{scss, styl} // Helper tips to preprocessor syntax
+    │       │    │
+    │       │    ├─ partials // Styles to base tags
+    │       │    │
+    │       │    ├─ settings
+    │       │    │  │
+    │       │    │  ├─ _variables.{sass, styl}
+    │       │    │  │
+    │       │    │  └─ _web-fonts.{sass, styl}
+    │       │    │
+    │       │    ├─ _base.{sass, styl} // Main Styles
+    │       │    │
+    │       │    └─ styles.{sass, styl} // Base file with imports
+    │       │
+    │       ├─ vendors // Third-party code
+    │       │
+    │       └─ header-comments.txt // Header to styles and Scripts
+    │
+    ├─ .bowerrc // Bower configuration file
+    ├─ .csslintrc // CSSLint configuration file
+    ├─ .editorconfig // Editorconfig configuration file
+    ├─ .eslintrc // ESLint configuration file
+    ├─ bower.json // Bower dependencies
+    ├─ config.json // Swill configuration file
+    ├─ gulpfile.js // Gulp file
+    ├─ LICENSE.md // Swill License
+    ├─ karma.conf.js // Karma configuration file
+    ├─ package.json // NPM dependencies
+    └─ README.md // Documentation</pre>
+  </div>
 
-    <h4>basePaths</h4>
+  <h2>Dependencies</h2>
 
-    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+  <ol>
+    <li>Download and install the <a href="http://editorconfig.org/#download">EditorConfig plugin</a> for your text editor.</li>
 
-    <p>Application paths.</p>
+    <li>Download and install <a href="http://nodejs.org/download">Node.js</a>
+        <ul><li>Select npm package manager</li></ul>
+    </li>
+
+    <li>Install <a href="http://gulpjs.com">Gulp</a>
+      <ul>
+        <li>Open command line and executec
+        <pre><code>$ npm install -g gulp</code></pre>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Boilerplate</h2>
+
+  <p>JavaScript files in <kbd>src/scripts</kbd> named with <kbd>*_IGNORE.js</kbd> will be ignored and won't be published, named with <kbd>*_SEPARATE.js</kbd> won't be concatenated and will be generated separately.</p>
+  <p>Example</p>
+  <p><kbd>myplugin_SEPARATE.js</kbd> will be published as <kbd>myplugin.js</kbd>.</p>
+
+  <p>The folder <kbd>public/img</kbd> is cleaned when some tasks are executed, the images come from <kbd>src/images</kbd>, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the <kbd>public/img/copyright</kbd>, they won't be deleted.</p>
+
+  <p>If for some other reason you want to use other folders, add the path in <kbd>basePaths.clean.ignore</kbd> on <a href="#config">config.json</a>, and it won't be deleted.</p>
+
+  <h3>Tasks</h3>
+
+  <p><strong>Default Task</strong> - serve the project and watch (Alias to <kbd>gulp serve</kbd>)</p>
+
+  <pre><code>$ gulp</code></pre>
+
+  <p><strong>Default Task</strong> (the default task accepts the parameter --compile) - clean assets, compile, watch and serve the project.</p>
+
+  <pre><code>$ gulp --compile</code></pre>
+
+  <p><strong>Compile Task</strong> - clean assets and compile the project.</p>
+
+  <pre><code>$ gulp compile</code></pre>
+
+  <p><strong>Build Task</strong> - build the project</p>
+
+  <pre><code>$ gulp build</code></pre>
+
+  <p><strong>Build Task</strong> (the build task accepts the parameter --serve) - build the project and serve built project.</p>
+
+  <pre><code>$ gulp build --serve</code></pre>
+
+  <p><strong>Gh-pages Task</strong> - build the project and push the output folder to gh-pages branch</p>
+
+  <pre><code>$ gulp gh-pages</code></pre>
+
+  <p><strong>Test Task</strong> - run unit tests</p>
+
+  <pre><code>$ gulp test</code></pre>
 
 
-    <h4>components</h4>
+  <h3 id="config">Config</h3>
 
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p>Open the file <kbd>config.json</kbd> and setting as needed.</p>
 
-    <p>Basic styles, only available with Stylus.</p>
-    <!-- <p>Basic styles to <a href="components.html">components</a>, only available with Stylus.</p> -->
+  <h4>basePaths</h4>
 
+  <p><strong>Type:</strong> <kbd>Object</kbd></p>
 
-    <h4>jQuery</h4>
-
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p>Application paths.</p>
 
 
-    <h4>lintCSS</h4>
+  <h4>components</h4>
 
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
-
-    <h4>lintJS</h4>
-
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p>Basic styles, only available with Stylus.</p>
+  <!-- <p>Basic styles to <a href="components.html">components</a>, only available with Stylus.</p> -->
 
 
-    <h4>handlebars</h4>
+  <h4>jQuery</h4>
 
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
-
-
-    <h4>inlineSVG</h4>
-
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
-
-    <p>Enable SVG inline. Only available with handlebars.</p>
-
-    <p><a href="https://github.com/tiagoporto/jquery-svg-to-inline">jQuery svg to inline</a> is an option to use without handlebars</p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
 
-    <h4>autoprefixerBrowsers</h4>
+  <h4>lintCSS</h4>
 
-    <p><strong>Type:</strong> <kbd>Array</kbd></p>
-
-    <p>Autoprefixer option, see the autoprefixer <a href="https://github.com/postcss/autoprefixer#options">docs</a>.</p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
 
-    <h4>browserSync</h4>
+  <h4>lintJS</h4>
 
-    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
-    <p>BrowserSync options, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
 
-    <p>If you use dynamic files, it's necessary to replace the server option by proxy.</p>
+  <h4>handlebars</h4>
 
-    <h5>Example</h5>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
-    <pre><code>"browserSyncConfig": {
-    "notify": false,
-    "logPrefix": "BrowserSync",
-    "server": {
-        "baseDir": ["src/", "public/"]
-    }
+
+  <h4>inlineSVG</h4>
+
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+  <p>Enable SVG inline. Only available with handlebars.</p>
+
+  <p><a href="https://github.com/tiagoporto/jquery-svg-to-inline">jQuery svg to inline</a> is an option to use without handlebars</p>
+
+
+  <h4>autoprefixerBrowsers</h4>
+
+  <p><strong>Type:</strong> <kbd>Array</kbd></p>
+
+  <p>Autoprefixer option, see the autoprefixer <a href="https://github.com/postcss/autoprefixer#options">docs</a>.</p>
+
+
+  <h4>browserSync</h4>
+
+  <p><strong>Type:</strong> <kbd>Object</kbd></p>
+
+  <p>BrowserSync options, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
+
+  <p>If you use dynamic files, it's necessary to replace the server option by proxy.</p>
+
+  <h5>Example</h5>
+
+  <pre><code>"browserSyncConfig": {
+  "notify": false,
+  "logPrefix": "BrowserSync",
+  "server": {
+      "baseDir": ["src/", "public/"]
+  }
 }</code></pre>
 
-    <pre><code>"browserSyncConfig": {
-    "notify": false,
-    "logPrefix": "BrowserSync",
-    "proxy": "localhost/swill-boilerplate/public/"
+  <pre><code>"browserSyncConfig": {
+  "notify": false,
+  "logPrefix": "BrowserSync",
+  "proxy": "localhost/swill-boilerplate/public/"
 }</code></pre>
 
 
-    <h4>browserSyncBuild</h4>
+  <h4>browserSyncBuild</h4>
 
-    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+  <p><strong>Type:</strong> <kbd>Object</kbd></p>
 
-    <p>BrowserSync options for the built project, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
-
-
-    <h3>Bitmap Sprite</h3>
-
-    <p>This boilerplate uses <a href="https://www.npmjs.org/package/gulp.spritesmith">gulp.spritesmith</a> to generate bitmap sprites.</p>
-
-    <p>When the sprite is generated, a file <kbd>_bitmap-sprite.{styl,scss}</kbd> is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables are the same as the original filename before the compilation).</p>
-
-    <p>Just use the mixins with the variables as parameters.</p>
-
-    <p>Example</p>
-
-    <pre><code>#arrow
-  sprite($left_arrow)
-
-  &:hover
-    spritePosition($right_arrow)</code></pre>
+  <p>BrowserSync options for the built project, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
 
 
-    <p>Output</p>
+  <h3>Bitmap Sprite</h3>
 
-    <pre><code>#arrow {
+  <p>This boilerplate uses <a href="https://www.npmjs.org/package/gulp.spritesmith">gulp.spritesmith</a> to generate bitmap sprites.</p>
+
+  <p>When the sprite is generated, a file <kbd>_bitmap-sprite.{styl,scss}</kbd> is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables are the same as the original filename before the compilation).</p>
+
+  <p>Just use the mixins with the variables as parameters.</p>
+
+  <p>Example</p>
+
+  <pre><code>#arrow
+sprite($left_arrow)
+
+&:hover
+  spritePosition($right_arrow)</code></pre>
+
+
+  <p>Output</p>
+
+  <pre><code>#arrow {
   background-image: url(../images/sprite.png);
   background-position: 0px 0px;
   width: 32px;
@@ -619,37 +607,35 @@ npm install -g generator-swill-boilerplate</code></pre>
 }</code></pre>
 
 
-    <h3>Vector Sprite</h3>
+  <h3>Vector Sprite</h3>
 
-    <p>SVG sprites are generated with <a href="https://github.com/jkphl/gulp-svg-sprite">gulp-svg-sprite</a>, and as a fallback, all the SVG sprites are converted to <kbd>.png</kbd> with <a href="https://github.com/akoenig/gulp-svg2png">gulp-svg2png</a>.</p>
+  <p>SVG sprites are generated with <a href="https://github.com/jkphl/gulp-svg-sprite">gulp-svg-sprite</a>, and as a fallback, all the SVG sprites are converted to <kbd>.png</kbd> with <a href="https://github.com/akoenig/gulp-svg2png">gulp-svg2png</a>.</p>
 
-    <p>Put the icon in <kbd>src/images/sprite</kbd>.</p>
-    <p>In HTML put the class in elements</p>
+  <p>Put the icon in <kbd>src/images/sprite</kbd>.</p>
+  <p>In HTML put the class in elements</p>
 
-    <pre><code>&lt;i class="icon-star-dims icon-star">&lt;i></code></pre>
+  <pre><code>&lt;i class="icon-star-dims icon-star">&lt;i></code></pre>
 
-    <p>The class <kbd>-dims</kbd> gets the dimensions and the other the position of the icon in sprite.</p>
+  <p>The class <kbd>-dims</kbd> gets the dimensions and the other the position of the icon in sprite.</p>
 
-    <p>The classname is defined by the <kbd>.svg</kbd> filename, example:</p>
+  <p>The classname is defined by the <kbd>.svg</kbd> filename, example:</p>
 
-    <p><kbd>moon.svg</kbd> the classname uses the prefix <kbd>icon-</kbd> and the filename of the svg <kbd>moon</kbd>.</p>
-    <p>If you want to use a hover, just name the file <kbd>moon~hover.svg</kbd> and use the class <kbd>sgv-moon</kbd>.</p>
+  <p><kbd>moon.svg</kbd> the classname uses the prefix <kbd>icon-</kbd> and the filename of the svg <kbd>moon</kbd>.</p>
+  <p>If you want to use a hover, just name the file <kbd>moon~hover.svg</kbd> and use the class <kbd>sgv-moon</kbd>.</p>
 
 
+        <footer>
+            <p>Copyright © 2014 - 2017 <a href="http://www.tiagoporto.com/">Tiago Porto</a></p>
+        </footer>
+    </main>
 
-            <footer>
-                <p>Copyright © 2014 - 2016 <a href="http://www.tiagoporto.com/">Tiago Porto</a></p>
-            </footer>
-        </main>
+    <!-- build:js js/scripts.combined.min.js -->
+    <script src="../node_modules/outdatedbrowser/outdatedbrowser/outdatedbrowser.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery-logo-downloadtip/js/jquery-logo-downloadtip.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js js/scripts.combined.min.js -->
-        <script src="../node_modules/outdated-browser/outdatedbrowser/outdatedbrowser.js"></script>
-        <script src="../node_modules/jquery/dist/jquery.js"></script>
-        <script src="../node_modules/jquery-logo-downloadtip/js/jquery-logo-downloadtip.min.js"></script>
-        <script src="js/vendors.js"></script>
-        <script src="js/scripts.js"></script>
-        <!-- endbuild -->
-
-        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-    </body>
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+  </body>
 </html>

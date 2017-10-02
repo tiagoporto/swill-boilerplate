@@ -1,386 +1,386 @@
 {{#> header
-    title="Swill Boilerplate"
-    description="🍺 The front-end Boilerplate that you need to start easily customizable multi-device development."
-    keywords="template, gulp, boilerplate, customizable, automation, stylus, sass, image optimization, scripts concatenation, live browser reloading, cross-device synchronization, html validation"
-    lang=""
+  title="Swill Boilerplate"
+  description="🍺 The front-end Boilerplate that you need to start easily customizable multi-device development."
+  keywords="template,gulp,boilerplate,customizable,automation,stylus,sass,image optimization,scripts concatenation,live browser reloading,cross-device synchronization,html validation,browserify,handlebars"
+  lang="en"
 }}
 
-    <!-- <nav>
-        <ul>
-            <li>
-                <a href="https://github.com/tiagoporto/swillboilerplate.rocks/blob/master/README.md">Docs</a>
-            </li>
-
-            <li>
-                <a href="components.html">Components</a>
-            </li>
-
-            <li>
-                <a href="functions-mixins.html">Functions and Mixins</a>
-            </li>
-        </ul>
-    </nav> -->
-
-    <p>This website is still in progress.</p>
-
-    <h2>Features</h2>
-
+  <!-- <nav>
     <ul>
-        <li>Cleans the assets (build, images, CSS, JS) in the project to maintain the directory organization</li>
-        <li>Compresses Images</li>
-        <li>Generates Sprites with .png</li>
-        <li>Generates Sprites with .svg and a .png to fallback</li>
-        <li>Analyzes CSS with CSS Lint</li>
-        <li>Prefixes CSS with Autoprefixer</li>
-        <li>Compiles Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)</li>
-        <li>Concatenates And Minifies Scripts</li>
-        <li>Analyzes JavaScript with ESLint</li>
-        <li>Compiles ES2015</li>
-        <li>Notifies when tasks are complete</li>
-        <li>Monitors change in the files and reloads browser with BrowserSync</li>
-        <li>Uses Jasmine & Karma to test JavaScript</li>
-        <li>Builds the project compressing HTML, CSS and JS</li>
-        <li>Pushes the build folder to gh-pages branch</li>
+      <li>
+        <a href="https://github.com/tiagoporto/swillboilerplate.rocks/blob/master/README.md">Docs</a>
+      </li>
+
+      <li>
+        <a href="components.html">Components</a>
+      </li>
+
+      <li>
+        <a href="functions-mixins.html">Functions and Mixins</a>
+      </li>
     </ul>
+  </nav> -->
 
-    <h2>Technologies</h2>
+  <p>This website is still in progress.</p>
 
-    <p>This boilerplate uses the following technologies:</p>
+  <h2>Features</h2>
 
-    <ul>
-        <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
-        <li><a href="https://babeljs.io">Babel</a></li>
-        <li><a href="http://www.browsersync.io">BrowserSync</a></li>
-        <li><a href="http://csslint.net">CSSLint</a></li>
-        <li><a href="http://editorconfig.org">EditorConfig</a></li>
-        <li><a href="http://eslint.org">ESLint</a></li>
-        <li><a href="http://gulpjs.com">Gulp</a></li>
-        <li><a href="http://handlebarsjs.com">Handlebars</a></li>
-        <li><a href="http://jasmine.github.io">Jasmine</a></li>
-        <li><a href="http://karma-runner.github.io/0.13/index.html">Karma</a></li>
-        <li><a href="http://nodejs.org">Node.js</a></li>
-        <li><a href="https://www.npmjs.com">NPM</a></li>
-        <li><a href="http://sass-lang.com">Sass</a> or <a href="http://learnboost.github.io/stylus">Stylus</a></li>
-    </ul>
+  <ul>
+    <li>Cleans the assets (build, images, CSS, JS) in the project to maintain the directory organization</li>
+    <li>Compresses Images</li>
+    <li>Generates Sprites with .png</li>
+    <li>Generates Sprites with .svg and a .png to fallback</li>
+    <li>Analyzes CSS with CSS Lint</li>
+    <li>Prefixes CSS with Autoprefixer</li>
+    <li>Compiles Sass or Stylus (Catch the Stylus error and direct shows on the page, as in Sass)</li>
+    <li>Concatenates And Minifies Scripts</li>
+    <li>Analyzes JavaScript with ESLint</li>
+    <li>Compiles ES2015</li>
+    <li>Notifies when tasks are complete</li>
+    <li>Monitors change in the files and reloads browser with BrowserSync</li>
+    <li>Uses Jasmine & Karma to test JavaScript</li>
+    <li>Builds the project compressing HTML, CSS and JS</li>
+    <li>Pushes the build folder to gh-pages branch</li>
+  </ul>
 
-    <h2>Includes</h2>
+  <h2>Technologies</h2>
 
-    <ul>
-        <li>Functions and mixins - CSS preprocessors</li>
-        <!-- <li><a href="functions-mixins.html">Functions and mixins</a> - CSS preprocessors</li> -->
-        <li><a href="http://www.google.com/analytics">Google Analytics</a></li>
-        <li><a href="http://tiagoporto.github.io/jquery-logo-downloadtip">jQuery Logo Downloadtip</a> - Only if jQuery is used</li>
-        <li><a href="http://necolas.github.io/normalize.css">Normalize.css</a></li>
-        <li><a href="http://outdatedbrowser.com">Outdated Browser</a></li>
-        <li>Styles to Basic HTML elements - Only available with Stylus</li>
-        <!-- <li><a href="components.html">Styles to Basic HTML elements</a> - Only available with Stylus</li> -->
-    </ul>
+  <p>This boilerplate uses the following technologies:</p>
 
-    <h2>Installation</h2>
+  <ul>
+    <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
+    <li><a href="https://babeljs.io">Babel</a></li>
+    <li><a href="http://www.browsersync.io">BrowserSync</a></li>
+    <li><a href="http://csslint.net">CSSLint</a></li>
+    <li><a href="http://editorconfig.org">EditorConfig</a></li>
+    <li><a href="http://eslint.org">ESLint</a></li>
+    <li><a href="http://gulpjs.com">Gulp</a></li>
+    <li><a href="http://handlebarsjs.com">Handlebars</a></li>
+    <li><a href="http://jasmine.github.io">Jasmine</a></li>
+    <li><a href="http://karma-runner.github.io/0.13/index.html">Karma</a></li>
+    <li><a href="http://nodejs.org">Node.js</a></li>
+    <li><a href="https://www.npmjs.com">NPM</a></li>
+    <li><a href="http://sass-lang.com">Sass</a> or <a href="http://learnboost.github.io/stylus">Stylus</a></li>
+  </ul>
 
-    <p>First, install Yeoman and generator-swill-boilerplate using npm (we assume you have pre-installed node.js).</p>
+  <h2>Includes</h2>
 
-<pre><code>npm install -g yo
+  <ul>
+    <li>Functions and mixins - CSS preprocessors</li>
+    <!-- <li><a href="functions-mixins.html">Functions and mixins</a> - CSS preprocessors</li> -->
+    <li><a href="http://www.google.com/analytics">Google Analytics</a></li>
+    <li><a href="http://tiagoporto.github.io/jquery-logo-downloadtip">jQuery Logo Downloadtip</a> - Only if jQuery is used</li>
+    <li><a href="http://necolas.github.io/normalize.css">Normalize.css</a></li>
+    <li><a href="http://outdatedbrowser.com">Outdated Browser</a></li>
+    <li>Styles to Basic HTML elements - Only available with Stylus</li>
+    <!-- <li><a href="components.html">Styles to Basic HTML elements</a> - Only available with Stylus</li> -->
+  </ul>
+
+  <h2>Installation</h2>
+
+  <p>First, install Yeoman and generator-swill-boilerplate using npm (we assume you have pre-installed node.js).</p>
+
+  <pre><code>npm install -g yo
 npm install -g generator-swill-boilerplate</code></pre>
 
 
-    <p>Then generate your new project:</p>
+  <p>Then generate your new project:</p>
 
-    <pre><code>yo swill-boilerplate</code></pre>
-
-
-    <h2>Usage</h2>
-
-    <ol>
-        <li>Open the files <kbd>.csslintrc</kbd>, <kbd>.editorconfig</kbd>, and <kbd>.eslintrc</kbd> and set your configs to CSSLint, EditorConfig and ESLint respectively.</li>
-
-        <li>Open the file <kbd>src/header-comments.txt</kbd> and set your project header.</li>
-
-        <li>Open the terminal and go to the local folder.</li>
-
-        <li>On your first run, execute the task <kbd>gulp</kbd> with parameter <kbd>compile</kbd> and start the development
-        <pre><code>$ gulp --compile</code></pre>
-        </li>
-    </ol>
+  <pre><code>yo swill-boilerplate</code></pre>
 
 
-    <h2>Folder Structure</h2>
+  <h2>Usage</h2>
 
-<div>
-<pre>
-./
-├──┐
-│  │
-│  ├─ app // Public files
-│  │  │
-│  │  ├─ css
-│  │  │  └─ // Public styles
-│  │  │
-│  │  ├─ fonts
-│  │  │  └─ // Web Fonts
-│  │  │
-│  │  ├─ img
-│  │  │  │
-│  │  │  ├─ copyright // Images with copyright metadata
-│  │  │  │
-│  │  │  ├─ logos // Logos of the projet
-│  │  │  │
-│  │  │  └─ // Public images
-│  │  │
-│  │  ├─ js
-│  │  │  └─ // Public scripts
-│  │  │
-│  │  ├─ apple-touch-icon.png // Icon for Safari on iOS
-│  │  │
-│  │  ├─ favicon.ico //Icon for address bar and bookmark
-│  │  │
-│  │  ├─ index.html
-│  │  │
-│  │  └─ // HTML, PHP, etc Files
-│  │
-│  ├─ spec // Scripts test
-│  │
-│  └─ src // Source files for the projects
-│       │
-│       ├─ handlebars
-│       │  │
-│       │  ├─ includes // Handlebars partials
-│       │  │
-│       │  └─ // Handlebars templates
-│       │
-│       ├─ images // Original images, don't compressed
-│       │  │
-│       │  ├─ sprite // Images to generate the sprite
-│       │  │
-│       │  ├─ touch // Icons
-│       │  │   │
-│       │  │   ├─ chrome-touch-icon-192x192.png // Icon for Chrome on Android
-│       │  │   │
-│       │  │   ├─ icon-128x128.png // Icon for Firefox on FirefoxOS
-│       │  │   │
-│       │  │   ├─ tile.png // Tile icon for Win8
-│       │  │   │
-│       │  │   └─ tile-wide.png // Wide tile icon for Win8
-│       │  │
-│       │  └─ // .jpg, .jpeg, .gif, .svg and .bmp to be compressed
-│       │
-│       ├─ scripts
-│       │  │
-│       │  ├─ settings
-│       │  │  │
-│       │  │  ├─ call_plugins.js // Call the plugins after page load
-│       │  │  │
-│       │  │  └─ google_analytics.js
-│       │  │
-│       │  └─ // Scripts
-│       │
-│       ├─ stylesheets
-│       │    │
-│       │    ├─ components
-│       │    │
-│       │    ├─ helpers
-│       │    │  │
-│       │    │  ├─ functions // All files here will be concatenated to ../functions.{scss, styl}
-│       │    │  │
-│       │    │  ├─ mixins // All files here will be concatenated to ../mixins.{scss, styl}
-│       │    │  │
-│       │    │  └─ _helpers.{scss, styl} // Helper tips to preprocessor syntax
-│       │    │
-│       │    ├─ partials // Styles to base tags
-│       │    │
-│       │    ├─ settings
-│       │    │  │
-│       │    │  ├─ _variables.{sass, styl}
-│       │    │  │
-│       │    │  └─ _web-fonts.{sass, styl}
-│       │    │
-│       │    ├─ _base.{sass, styl} // Main Styles
-│       │    │
-│       │    └─ styles.{sass, styl} // Base file with imports
-│       │
-│       ├─ vendors // Third-party code
-│       │
-│       └─ header-comments.txt // Header to styles and Scripts
-│
-├─ .bowerrc // Bower configuration file
-├─ .csslintrc // CSSLint configuration file
-├─ .editorconfig // Editorconfig configuration file
-├─ .eslintrc // ESLint configuration file
-├─ bower.json // Bower dependencies
-├─ config.json // Swill configuration file
-├─ gulpfile.js // Gulp file
-├─ LICENSE.md // Swill License
-├─ karma.conf.js // Karma configuration file
-├─ package.json // NPM dependencies
-└─ README.md // Documentation</pre>
-</div>
+  <ol>
+    <li>Open the files <kbd>.csslintrc</kbd>, <kbd>.editorconfig</kbd>, and <kbd>.eslintrc</kbd> and set your configs to CSSLint, EditorConfig and ESLint respectively.</li>
 
-    <h2>Dependencies</h2>
+    <li>Open the file <kbd>src/header-comments.txt</kbd> and set your project header.</li>
 
-    <ol>
-        <li>Download and install the <a href="http://editorconfig.org/#download">EditorConfig plugin</a> for your text editor.</li>
+    <li>Open the terminal and go to the local folder.</li>
 
-        <li>Download and install <a href="http://nodejs.org/download">Node.js</a>
-            <ul><li>Select npm package manager</li></ul>
-        </li>
-
-        <li>Install <a href="http://gulpjs.com">Gulp</a>
-            <ul>
-                <li>Open command line and executec
-                <pre><code>$ npm install -g gulp</code></pre>
-                </li>
-            </ul>
-        </li>
-    </ol>
-
-    <h2>Boilerplate</h2>
-
-    <p>JavaScript files in <kbd>src/scripts</kbd> named with <kbd>*_IGNORE.js</kbd> will be ignored and won't be published, named with <kbd>*_SEPARATE.js</kbd> won't be concatenated and will be generated separately.</p>
-    <p>Example</p>
-    <p><kbd>myplugin_SEPARATE.js</kbd> will be published as <kbd>myplugin.js</kbd>.</p>
-
-    <p>The folder <kbd>public/img</kbd> is cleaned when some tasks are executed, the images come from <kbd>src/images</kbd>, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the <kbd>public/img/copyright</kbd>, they won't be deleted.</p>
-
-    <p>If for some other reason you want to use other folders, add the path in <kbd>basePaths.clean.ignore</kbd> on <a href="#config">config.json</a>, and it won't be deleted.</p>
-
-    <h3>Tasks</h3>
-
-    <p><strong>Default Task</strong> - serve the project and watch (Alias to <kbd>gulp serve</kbd>)</p>
-
-    <pre><code>$ gulp</code></pre>
-
-    <p><strong>Default Task</strong> (the default task accepts the parameter --compile) - clean assets, compile, watch and serve the project.</p>
-
+    <li>On your first run, execute the task <kbd>gulp</kbd> with parameter <kbd>compile</kbd> and start the development
     <pre><code>$ gulp --compile</code></pre>
-
-    <p><strong>Compile Task</strong> - clean assets and compile the project.</p>
-
-    <pre><code>$ gulp compile</code></pre>
-
-    <p><strong>Build Task</strong> - build the project</p>
-
-    <pre><code>$ gulp build</code></pre>
-
-    <p><strong>Build Task</strong> (the build task accepts the parameter --serve) - build the project and serve built project.</p>
-
-    <pre><code>$ gulp build --serve</code></pre>
-
-    <p><strong>Gh-pages Task</strong> - build the project and push the output folder to gh-pages branch</p>
-
-    <pre><code>$ gulp gh-pages</code></pre>
-
-    <p><strong>Test Task</strong> - run unit tests</p>
-
-    <pre><code>$ gulp test</code></pre>
+    </li>
+  </ol>
 
 
-    <h3 id="config">Config</h3>
+  <h2>Folder Structure</h2>
 
-    <p>Open the file <kbd>config.json</kbd> and setting as needed.</p>
+  <div>
+    <pre>
+    ./
+    ├──┐
+    │  │
+    │  ├─ app // Public files
+    │  │  │
+    │  │  ├─ css
+    │  │  │  └─ // Public styles
+    │  │  │
+    │  │  ├─ fonts
+    │  │  │  └─ // Web Fonts
+    │  │  │
+    │  │  ├─ img
+    │  │  │  │
+    │  │  │  ├─ copyright // Images with copyright metadata
+    │  │  │  │
+    │  │  │  ├─ logos // Logos of the projet
+    │  │  │  │
+    │  │  │  └─ // Public images
+    │  │  │
+    │  │  ├─ js
+    │  │  │  └─ // Public scripts
+    │  │  │
+    │  │  ├─ apple-touch-icon.png // Icon for Safari on iOS
+    │  │  │
+    │  │  ├─ favicon.ico //Icon for address bar and bookmark
+    │  │  │
+    │  │  ├─ index.html
+    │  │  │
+    │  │  └─ // HTML, PHP, etc Files
+    │  │
+    │  ├─ spec // Scripts test
+    │  │
+    │  └─ src // Source files for the projects
+    │       │
+    │       ├─ handlebars
+    │       │  │
+    │       │  ├─ includes // Handlebars partials
+    │       │  │
+    │       │  └─ // Handlebars templates
+    │       │
+    │       ├─ images // Original images, don't compressed
+    │       │  │
+    │       │  ├─ sprite // Images to generate the sprite
+    │       │  │
+    │       │  ├─ touch // Icons
+    │       │  │   │
+    │       │  │   ├─ chrome-touch-icon-192x192.png // Icon for Chrome on Android
+    │       │  │   │
+    │       │  │   ├─ icon-128x128.png // Icon for Firefox on FirefoxOS
+    │       │  │   │
+    │       │  │   ├─ tile.png // Tile icon for Win8
+    │       │  │   │
+    │       │  │   └─ tile-wide.png // Wide tile icon for Win8
+    │       │  │
+    │       │  └─ // .jpg, .jpeg, .gif, .svg and .bmp to be compressed
+    │       │
+    │       ├─ scripts
+    │       │  │
+    │       │  ├─ settings
+    │       │  │  │
+    │       │  │  ├─ call_plugins.js // Call the plugins after page load
+    │       │  │  │
+    │       │  │  └─ google_analytics.js
+    │       │  │
+    │       │  └─ // Scripts
+    │       │
+    │       ├─ stylesheets
+    │       │    │
+    │       │    ├─ components
+    │       │    │
+    │       │    ├─ helpers
+    │       │    │  │
+    │       │    │  ├─ functions // All files here will be concatenated to ../functions.{scss, styl}
+    │       │    │  │
+    │       │    │  ├─ mixins // All files here will be concatenated to ../mixins.{scss, styl}
+    │       │    │  │
+    │       │    │  └─ _helpers.{scss, styl} // Helper tips to preprocessor syntax
+    │       │    │
+    │       │    ├─ partials // Styles to base tags
+    │       │    │
+    │       │    ├─ settings
+    │       │    │  │
+    │       │    │  ├─ _variables.{sass, styl}
+    │       │    │  │
+    │       │    │  └─ _web-fonts.{sass, styl}
+    │       │    │
+    │       │    ├─ _base.{sass, styl} // Main Styles
+    │       │    │
+    │       │    └─ styles.{sass, styl} // Base file with imports
+    │       │
+    │       ├─ vendors // Third-party code
+    │       │
+    │       └─ header-comments.txt // Header to styles and Scripts
+    │
+    ├─ .bowerrc // Bower configuration file
+    ├─ .csslintrc // CSSLint configuration file
+    ├─ .editorconfig // Editorconfig configuration file
+    ├─ .eslintrc // ESLint configuration file
+    ├─ bower.json // Bower dependencies
+    ├─ config.json // Swill configuration file
+    ├─ gulpfile.js // Gulp file
+    ├─ LICENSE.md // Swill License
+    ├─ karma.conf.js // Karma configuration file
+    ├─ package.json // NPM dependencies
+    └─ README.md // Documentation</pre>
+  </div>
 
-    <h4>basePaths</h4>
+  <h2>Dependencies</h2>
 
-    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+  <ol>
+    <li>Download and install the <a href="http://editorconfig.org/#download">EditorConfig plugin</a> for your text editor.</li>
 
-    <p>Application paths.</p>
+    <li>Download and install <a href="http://nodejs.org/download">Node.js</a>
+        <ul><li>Select npm package manager</li></ul>
+    </li>
+
+    <li>Install <a href="http://gulpjs.com">Gulp</a>
+      <ul>
+        <li>Open command line and executec
+        <pre><code>$ npm install -g gulp</code></pre>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Boilerplate</h2>
+
+  <p>JavaScript files in <kbd>src/scripts</kbd> named with <kbd>*_IGNORE.js</kbd> will be ignored and won't be published, named with <kbd>*_SEPARATE.js</kbd> won't be concatenated and will be generated separately.</p>
+  <p>Example</p>
+  <p><kbd>myplugin_SEPARATE.js</kbd> will be published as <kbd>myplugin.js</kbd>.</p>
+
+  <p>The folder <kbd>public/img</kbd> is cleaned when some tasks are executed, the images come from <kbd>src/images</kbd>, but if you work with copyrighted images you shouldn't use compression, because it removes the metadata from the files. You can place images directly in the <kbd>public/img/copyright</kbd>, they won't be deleted.</p>
+
+  <p>If for some other reason you want to use other folders, add the path in <kbd>basePaths.clean.ignore</kbd> on <a href="#config">config.json</a>, and it won't be deleted.</p>
+
+  <h3>Tasks</h3>
+
+  <p><strong>Default Task</strong> - serve the project and watch (Alias to <kbd>gulp serve</kbd>)</p>
+
+  <pre><code>$ gulp</code></pre>
+
+  <p><strong>Default Task</strong> (the default task accepts the parameter --compile) - clean assets, compile, watch and serve the project.</p>
+
+  <pre><code>$ gulp --compile</code></pre>
+
+  <p><strong>Compile Task</strong> - clean assets and compile the project.</p>
+
+  <pre><code>$ gulp compile</code></pre>
+
+  <p><strong>Build Task</strong> - build the project</p>
+
+  <pre><code>$ gulp build</code></pre>
+
+  <p><strong>Build Task</strong> (the build task accepts the parameter --serve) - build the project and serve built project.</p>
+
+  <pre><code>$ gulp build --serve</code></pre>
+
+  <p><strong>Gh-pages Task</strong> - build the project and push the output folder to gh-pages branch</p>
+
+  <pre><code>$ gulp gh-pages</code></pre>
+
+  <p><strong>Test Task</strong> - run unit tests</p>
+
+  <pre><code>$ gulp test</code></pre>
 
 
-    <h4>components</h4>
+  <h3 id="config">Config</h3>
 
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p>Open the file <kbd>config.json</kbd> and setting as needed.</p>
 
-    <p>Basic styles, only available with Stylus.</p>
-    <!-- <p>Basic styles to <a href="components.html">components</a>, only available with Stylus.</p> -->
+  <h4>basePaths</h4>
 
+  <p><strong>Type:</strong> <kbd>Object</kbd></p>
 
-    <h4>jQuery</h4>
-
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p>Application paths.</p>
 
 
-    <h4>lintCSS</h4>
+  <h4>components</h4>
 
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
-
-    <h4>lintJS</h4>
-
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+  <p>Basic styles, only available with Stylus.</p>
+  <!-- <p>Basic styles to <a href="components.html">components</a>, only available with Stylus.</p> -->
 
 
-    <h4>handlebars</h4>
+  <h4>jQuery</h4>
 
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
-
-
-    <h4>inlineSVG</h4>
-
-    <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
-
-    <p>Enable SVG inline. Only available with handlebars.</p>
-
-    <p><a href="https://github.com/tiagoporto/jquery-svg-to-inline">jQuery svg to inline</a> is an option to use without handlebars</p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
 
-    <h4>autoprefixerBrowsers</h4>
+  <h4>lintCSS</h4>
 
-    <p><strong>Type:</strong> <kbd>Array</kbd></p>
-
-    <p>Autoprefixer option, see the autoprefixer <a href="https://github.com/postcss/autoprefixer#options">docs</a>.</p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
 
-    <h4>browserSync</h4>
+  <h4>lintJS</h4>
 
-    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
-    <p>BrowserSync options, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
 
-    <p>If you use dynamic files, it's necessary to replace the server option by proxy.</p>
+  <h4>handlebars</h4>
 
-    <h5>Example</h5>
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
 
-    <pre><code>"browserSyncConfig": {
-    "notify": false,
-    "logPrefix": "BrowserSync",
-    "server": {
-        "baseDir": ["src/", "public/"]
-    }
+
+  <h4>inlineSVG</h4>
+
+  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
+
+  <p>Enable SVG inline. Only available with handlebars.</p>
+
+  <p><a href="https://github.com/tiagoporto/jquery-svg-to-inline">jQuery svg to inline</a> is an option to use without handlebars</p>
+
+
+  <h4>autoprefixerBrowsers</h4>
+
+  <p><strong>Type:</strong> <kbd>Array</kbd></p>
+
+  <p>Autoprefixer option, see the autoprefixer <a href="https://github.com/postcss/autoprefixer#options">docs</a>.</p>
+
+
+  <h4>browserSync</h4>
+
+  <p><strong>Type:</strong> <kbd>Object</kbd></p>
+
+  <p>BrowserSync options, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
+
+  <p>If you use dynamic files, it's necessary to replace the server option by proxy.</p>
+
+  <h5>Example</h5>
+
+  <pre><code>"browserSyncConfig": {
+  "notify": false,
+  "logPrefix": "BrowserSync",
+  "server": {
+      "baseDir": ["src/", "public/"]
+  }
 }</code></pre>
 
-    <pre><code>"browserSyncConfig": {
-    "notify": false,
-    "logPrefix": "BrowserSync",
-    "proxy": "localhost/swill-boilerplate/public/"
+  <pre><code>"browserSyncConfig": {
+  "notify": false,
+  "logPrefix": "BrowserSync",
+  "proxy": "localhost/swill-boilerplate/public/"
 }</code></pre>
 
 
-    <h4>browserSyncBuild</h4>
+  <h4>browserSyncBuild</h4>
 
-    <p><strong>Type:</strong> <kbd>Object</kbd></p>
+  <p><strong>Type:</strong> <kbd>Object</kbd></p>
 
-    <p>BrowserSync options for the built project, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
-
-
-    <h3>Bitmap Sprite</h3>
-
-    <p>This boilerplate uses <a href="https://www.npmjs.org/package/gulp.spritesmith">gulp.spritesmith</a> to generate bitmap sprites.</p>
-
-    <p>When the sprite is generated, a file <kbd>_bitmap-sprite.{styl,scss}</kbd> is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables are the same as the original filename before the compilation).</p>
-
-    <p>Just use the mixins with the variables as parameters.</p>
-
-    <p>Example</p>
-
-    <pre><code>#arrow
-  sprite($left_arrow)
-
-  &:hover
-    spritePosition($right_arrow)</code></pre>
+  <p>BrowserSync options for the built project, see the browsersync <a href="https://www.browsersync.io/docs/options">docs</a>.</p>
 
 
-    <p>Output</p>
+  <h3>Bitmap Sprite</h3>
 
-    <pre><code>#arrow {
+  <p>This boilerplate uses <a href="https://www.npmjs.org/package/gulp.spritesmith">gulp.spritesmith</a> to generate bitmap sprites.</p>
+
+  <p>When the sprite is generated, a file <kbd>_bitmap-sprite.{styl,scss}</kbd> is created with four mixins and the variables of the parameters of the images, like height and width (the names of the variables are the same as the original filename before the compilation).</p>
+
+  <p>Just use the mixins with the variables as parameters.</p>
+
+  <p>Example</p>
+
+  <pre><code>#arrow
+sprite($left_arrow)
+
+&:hover
+  spritePosition($right_arrow)</code></pre>
+
+
+  <p>Output</p>
+
+  <pre><code>#arrow {
   background-image: url(../images/sprite.png);
   background-position: 0px 0px;
   width: 32px;
@@ -391,20 +391,19 @@ npm install -g generator-swill-boilerplate</code></pre>
 }</code></pre>
 
 
-    <h3>Vector Sprite</h3>
+  <h3>Vector Sprite</h3>
 
-    <p>SVG sprites are generated with <a href="https://github.com/jkphl/gulp-svg-sprite">gulp-svg-sprite</a>, and as a fallback, all the SVG sprites are converted to <kbd>.png</kbd> with <a href="https://github.com/akoenig/gulp-svg2png">gulp-svg2png</a>.</p>
+  <p>SVG sprites are generated with <a href="https://github.com/jkphl/gulp-svg-sprite">gulp-svg-sprite</a>, and as a fallback, all the SVG sprites are converted to <kbd>.png</kbd> with <a href="https://github.com/akoenig/gulp-svg2png">gulp-svg2png</a>.</p>
 
-    <p>Put the icon in <kbd>src/images/sprite</kbd>.</p>
-    <p>In HTML put the class in elements</p>
+  <p>Put the icon in <kbd>src/images/sprite</kbd>.</p>
+  <p>In HTML put the class in elements</p>
 
-    <pre><code>&lt;i class="icon-star-dims icon-star">&lt;i></code></pre>
+  <pre><code>&lt;i class="icon-star-dims icon-star">&lt;i></code></pre>
 
-    <p>The class <kbd>-dims</kbd> gets the dimensions and the other the position of the icon in sprite.</p>
+  <p>The class <kbd>-dims</kbd> gets the dimensions and the other the position of the icon in sprite.</p>
 
-    <p>The classname is defined by the <kbd>.svg</kbd> filename, example:</p>
+  <p>The classname is defined by the <kbd>.svg</kbd> filename, example:</p>
 
-    <p><kbd>moon.svg</kbd> the classname uses the prefix <kbd>icon-</kbd> and the filename of the svg <kbd>moon</kbd>.</p>
-    <p>If you want to use a hover, just name the file <kbd>moon~hover.svg</kbd> and use the class <kbd>sgv-moon</kbd>.</p>
-
+  <p><kbd>moon.svg</kbd> the classname uses the prefix <kbd>icon-</kbd> and the filename of the svg <kbd>moon</kbd>.</p>
+  <p>If you want to use a hover, just name the file <kbd>moon~hover.svg</kbd> and use the class <kbd>sgv-moon</kbd>.</p>
 {{/header}}
