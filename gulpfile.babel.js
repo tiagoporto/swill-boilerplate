@@ -24,6 +24,7 @@ const sequence = require('run-sequence')
 const source = require('vinyl-source-stream')
 const spritesmith = require('gulp.spritesmith')
 const svgSprite = require('gulp-svg-sprite')
+const envify = require('envify/custom')
 
 // ***************************** Path configs ***************************** //
 
@@ -58,7 +59,7 @@ const paths = {
 }
 
 // ******************************* Settings ******************************* //
-let env = (args.prod) ? 'prod' : 'dev'
+let env = (args.env === 'production') ? args.env : 'development'
 const extensionStyle = 'styl'
 const headerProject = fs.readFileSync(`${basePaths.src}header-comments.txt`, 'utf8')
 const babelOption = { presets: ['env'] }
@@ -290,6 +291,7 @@ gulp.task('lint-script', () => {
 gulp.task('scripts', ['lint-script', 'other-scripts'], () => {
   return browserify(`${paths.scripts.src}index.js`)
     .transform(babelify, babelOption)
+    .transform(envify({NODE_ENV: env}))
     .bundle()
     .pipe(source('scripts.js'))
     .pipe(buffer())
@@ -456,7 +458,7 @@ gulp.task('gh', () => {
 
 // Build the project and push the builded folder to gh-pages branch
 gulp.task('gh-pages', () => {
-  env = 'prod'
+  env = 'production'
   sequence(
     [
       'outdatedbrowser',
@@ -477,7 +479,7 @@ gulp.task('gh-pages', () => {
 
 // Build Project and serve if pass the parameter --serve
 gulp.task('build', ['clean'], () => {
-  env = 'prod'
+  env = 'production'
   sequence(
     [
       'outdatedbrowser',
