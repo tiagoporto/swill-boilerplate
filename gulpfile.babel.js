@@ -59,7 +59,7 @@ const paths = {
 }
 
 // ******************************* Settings ******************************* //
-let env = (args.env === 'production') ? args.env : 'development'
+let env = (process.env.NODE_ENV === 'production') ? 'production' : 'development'
 const extensionStyle = 'styl'
 const headerProject = fs.readFileSync(`${basePaths.src}header-comments.txt`, 'utf8')
 const babelOption = { presets: ['env'] }
