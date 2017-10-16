@@ -72,8 +72,6 @@
     <li><a href="http://tiagoporto.github.io/jquery-logo-downloadtip">jQuery Logo Downloadtip</a> - Only if jQuery is used</li>
     <li><a href="http://necolas.github.io/normalize.css">Normalize.css</a></li>
     <li><a href="http://outdatedbrowser.com">Outdated Browser</a></li>
-    <li>Styles to Basic HTML elements - Only available with Stylus</li>
-    <!-- <li><a href="components.html">Styles to Basic HTML elements</a> - Only available with Stylus</li> -->
   </ul>
 
   <h2>Installation</h2>
@@ -83,23 +81,28 @@
   <pre><code>npm install -g yo
 npm install -g generator-swill-boilerplate</code></pre>
 
-
   <p>Then generate your new project:</p>
 
   <pre><code>yo swill-boilerplate</code></pre>
+
+  <h3>Utility</h3>
+
+  <p>Creating a style file</p>
+
+  <p>In the project folder execute</p>
+
+  <pre><code>yo swill-boilerplate:style</code></pre>
+
+  <p>This will create a style file in components folder and import it into _index.{styl,scss}</p>
 
 
   <h2>Usage</h2>
 
   <ol>
-    <li>Open the files <kbd>.csslintrc</kbd>, <kbd>.editorconfig</kbd>, and <kbd>.eslintrc</kbd> and set your configs to CSSLint, EditorConfig and ESLint respectively.</li>
-
-    <li>Open the file <kbd>src/header-comments.txt</kbd> and set your project header.</li>
-
     <li>Open the terminal and go to the local folder.</li>
 
-    <li>On your first run, execute the task <kbd>gulp</kbd> with parameter <kbd>compile</kbd> and start the development
-    <pre><code>$ gulp --compile</code></pre>
+    <li>Execute
+    <pre><code>$ npm start</code></pre>
     </li>
   </ol>
 
@@ -142,7 +145,7 @@ npm install -g generator-swill-boilerplate</code></pre>
     │  │
     │  └─ src // Source files for the projects
     │       │
-    │       ├─ handlebars
+    │       ├─ handlebars // If enabled
     │       │  │
     │       │  ├─ includes // Handlebars partials
     │       │  │
@@ -154,59 +157,48 @@ npm install -g generator-swill-boilerplate</code></pre>
     │       │  │
     │       │  ├─ touch // Icons
     │       │  │   │
+    │       │  │   ├─ apple-touch-icon.png // Icon for Apple
+    │       │  │   │
     │       │  │   ├─ chrome-touch-icon-192x192.png // Icon for Chrome on Android
     │       │  │   │
     │       │  │   ├─ icon-128x128.png // Icon for Firefox on FirefoxOS
     │       │  │   │
-    │       │  │   ├─ tile.png // Tile icon for Win8
-    │       │  │   │
-    │       │  │   └─ tile-wide.png // Wide tile icon for Win8
+    │       │  │   └─ ms-touch-icon-144x144-precomposed.png // Tile icon for Win8
     │       │  │
     │       │  └─ // .jpg, .jpeg, .gif, .svg and .bmp to be compressed
     │       │
     │       ├─ scripts
     │       │  │
-    │       │  ├─ settings
+    │       │  ├─ imports
     │       │  │  │
-    │       │  │  ├─ call_plugins.js // Call the plugins after page load
+    │       │  │  ├─ google_analytics.js
     │       │  │  │
-    │       │  │  └─ google_analytics.js
+    │       │  │  └─ javascript.js
     │       │  │
-    │       │  └─ // Scripts
+    │       │  └─ index.js // Import scripts
     │       │
-    │       ├─ stylesheets
-    │       │    │
-    │       │    ├─ components
-    │       │    │
-    │       │    ├─ helpers
-    │       │    │  │
-    │       │    │  ├─ functions // All files here will be concatenated to ../functions.{scss, styl}
-    │       │    │  │
-    │       │    │  ├─ mixins // All files here will be concatenated to ../mixins.{scss, styl}
-    │       │    │  │
-    │       │    │  └─ _helpers.{scss, styl} // Helper tips to preprocessor syntax
-    │       │    │
-    │       │    ├─ partials // Styles to base tags
-    │       │    │
-    │       │    ├─ settings
-    │       │    │  │
-    │       │    │  ├─ _variables.{sass, styl}
-    │       │    │  │
-    │       │    │  └─ _web-fonts.{sass, styl}
-    │       │    │
-    │       │    ├─ _base.{sass, styl} // Main Styles
-    │       │    │
-    │       │    └─ styles.{sass, styl} // Base file with imports
-    │       │
-    │       ├─ vendors // Third-party code
-    │       │
-    │       └─ header-comments.txt // Header to styles and Scripts
+    │       └── stylesheets
+    │            │
+    │            ├─ components
+    │            │
+    │            ├─ helpers
+    │            │  │
+    │            │  ├─ functions // All files here will be concatenated to ../functions.{scss, styl}
+    │            │  │
+    │            │  ├─ mixins // All files here will be concatenated to ../mixins.{scss, styl}
+    │            │  │
+    │            │  └─ _helpers.{scss, styl} // Helper tips to preprocessor syntax
+    │            │
+    │            ├─ settings
+    │            │  │
+    │            │  └─ _variables.{sass, styl}
+    │            │
+    │            └─ styles.{sass, styl} // Base file with imports
     │
-    ├─ .bowerrc // Bower configuration file
+    ├─ .babelrc // BAbel configuration file
     ├─ .csslintrc // CSSLint configuration file
     ├─ .editorconfig // Editorconfig configuration file
     ├─ .eslintrc // ESLint configuration file
-    ├─ bower.json // Bower dependencies
     ├─ config.json // Swill configuration file
     ├─ gulpfile.js // Gulp file
     ├─ LICENSE.md // Swill License
@@ -220,17 +212,7 @@ npm install -g generator-swill-boilerplate</code></pre>
   <ol>
     <li>Download and install the <a href="http://editorconfig.org/#download">EditorConfig plugin</a> for your text editor.</li>
 
-    <li>Download and install <a href="http://nodejs.org/download">Node.js</a>
-        <ul><li>Select npm package manager</li></ul>
-    </li>
-
-    <li>Install <a href="http://gulpjs.com">Gulp</a>
-      <ul>
-        <li>Open command line and executec
-        <pre><code>$ npm install -g gulp</code></pre>
-        </li>
-      </ul>
-    </li>
+    <li>To enable eslint on your editor text install some eslint plugin</li>
   </ol>
 
   <h2>Boilerplate</h2>
@@ -244,34 +226,33 @@ npm install -g generator-swill-boilerplate</code></pre>
   <p>If for some other reason you want to use other folders, add the path in <kbd>basePaths.clean.ignore</kbd> on <a href="#config">config.json</a>, and it won't be deleted.</p>
 
   <h3>Tasks</h3>
+  <p><strong>Default Task</strong> - clean assets, compile, watch and serve the project.</p>
 
-  <p><strong>Default Task</strong> - serve the project and watch (Alias to <kbd>gulp serve</kbd>)</p>
+  <pre><code>$ npm run start</code></pre>
 
-  <pre><code>$ gulp</code></pre>
+  <p><strong>Default Task</strong> - serve the project and watch</p>
 
-  <p><strong>Default Task</strong> (the default task accepts the parameter --compile) - clean assets, compile, watch and serve the project.</p>
-
-  <pre><code>$ gulp --compile</code></pre>
+  <pre><code>$ npm run serve</code></pre>
 
   <p><strong>Compile Task</strong> - clean assets and compile the project.</p>
 
-  <pre><code>$ gulp compile</code></pre>
+  <pre><code>$ npm run compile</code></pre>
 
   <p><strong>Build Task</strong> - build the project</p>
 
-  <pre><code>$ gulp build</code></pre>
+  <pre><code>$ npm run build</code></pre>
 
-  <p><strong>Build Task</strong> (the build task accepts the parameter --serve) - build the project and serve built project.</p>
+  <p><strong>Build and Serve Task</strong> - build the project and serve built project.</p>
 
-  <pre><code>$ gulp build --serve</code></pre>
+  <pre><code>$ npm run serve-build</code></pre>
 
   <p><strong>Gh-pages Task</strong> - build the project and push the output folder to gh-pages branch</p>
 
-  <pre><code>$ gulp gh-pages</code></pre>
+  <pre><code>$ npm run publish</code></pre>
 
   <p><strong>Test Task</strong> - run unit tests</p>
 
-  <pre><code>$ gulp test</code></pre>
+  <pre><code>$ npm run test</code></pre>
 
 
   <h3 id="config">Config</h3>
@@ -283,15 +264,6 @@ npm install -g generator-swill-boilerplate</code></pre>
   <p><strong>Type:</strong> <kbd>Object</kbd></p>
 
   <p>Application paths.</p>
-
-
-  <h4>components</h4>
-
-  <p><strong>Type:</strong> <kbd>Boolean</kbd></p>
-
-  <p>Basic styles, only available with Stylus.</p>
-  <!-- <p>Basic styles to <a href="components.html">components</a>, only available with Stylus.</p> -->
-
 
   <h4>jQuery</h4>
 
