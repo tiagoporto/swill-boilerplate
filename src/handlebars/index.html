@@ -367,15 +367,21 @@ sprite($left_arrow)
 
   <p>SVG sprites are generated with <a href="https://github.com/jkphl/gulp-svg-sprite">gulp-svg-sprite</a>, and as a fallback, all the SVG sprites are converted to <kbd>.png</kbd> with <a href="https://github.com/akoenig/gulp-svg2png">gulp-svg2png</a>.</p>
 
-  <p>Put the icon in <kbd>src/images/sprite</kbd>.</p>
-  <p>In HTML put the class in elements</p>
+  <p>Put the icons in <kbd>src/images/sprite</kbd>.</p>
+
+  <p>Use the class in HTML</p>
+
+  <h4>Example</h4>
 
   <pre><code>&lt;i class="icon-star-dims icon-star">&lt;i></code></pre>
 
-  <p>The class <kbd>-dims</kbd> gets the dimensions and the other the position of the icon in sprite.</p>
+  <p>The class <kbd>-dims</kbd> gets the dimensions and the <kbd>main class</kbd> the position of the icon in sprite.</p>
 
-  <p>The classname is defined by the <kbd>.svg</kbd> filename, example:</p>
+  <p>The classname is defined by the <kbd>.svg</kbd> filename.
 
-  <p><kbd>moon.svg</kbd> the classname uses the prefix <kbd>icon-</kbd> and the filename of the svg <kbd>moon</kbd>.</p>
-  <p>If you want to use a hover, just name the file <kbd>moon~hover.svg</kbd> and use the class <kbd>sgv-moon</kbd>.</p>
+  </p><p>Example:</p>
+
+  <p>The SVG filename <kbd>star.svg</kbd>, will generates the class <kbd>icon-star</kbd>, the prefix <kbd>icon-</kbd> and the filename of the file <kbd>star</kbd>.</p>
+
+  <p>If you want to use a hover, just name the file <kbd>star~hover.svg</kbd>. The hover class is generated automatically.</p>
 {{/header}}
