@@ -1,6 +1,6 @@
 
 <p align="right">
-  <code>LIKED ? Leave a <a href="https://github.com/tiagoporto/generator-swill-boilerplate">⭐</a> : 😞</code>
+  <code>LIKED ? Leave a <a href="https://github.com/tiagoporto/generator-swill-boilerplate">⭐</a> : <a href="https://github.com/tiagoporto/generator-swill-boilerplate/issues">😞</a></code>
 </p>
 
 <p align="center">
