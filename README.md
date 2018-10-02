@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-    <img src="http://tiagoporto.github.io/swillboilerplate.rocks/img/logos/logo.png" alt="Swill Boilerplate Logo">
+    <img src="http://tiagoporto.github.io/swill-boilerplate/img/logos/logo.png" alt="Swill Boilerplate Logo">
 </p>
 
 <p align="center">
